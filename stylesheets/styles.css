@@ -25,8 +25,8 @@ header p { margin: 0;  font-family: "din-condensed-web", sans-serif; font-size: 
 
 
 #how-it-works ul { margin: 0 auto; padding: 0; list-style: none; }
-#how-it-works li { border-radius: 50%; background: #ffac0e; color: #000; font-family: "din-condensed-web", sans-serif; font-size: 51px; letter-spacing: -0.04em; line-height: 35px;  display: inline-table; width: 130px; height: 95px; text-align: center; vertical-align: middle; margin: 10px; padding-top: 35px; }
-#how-it-works li span { text-transform: uppercase; font-size: 22px; margin-bottom: -6px; letter-spacing: normal; display: block; }
+#how-it-works li { background: #ffac0e; border-radius: 50%; color: #000; display: inline-table; font-family: "din-condensed-web", sans-serif; font-size: 51px; letter-spacing: -0.04em; margin: 10px; padding: 25px 15px 5px 15px; text-align: center; vertical-align: middle;}
+#how-it-works li span { text-transform: uppercase; font-size: 22px; margin: -20px 0 0 0; letter-spacing: normal; display: block; }
 #how-it-works a { color: #fff; }
 
 
