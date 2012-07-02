@@ -125,3 +125,18 @@ header p { text-align: center;}
 #emailform h2 { margin: 0 0 20px 0; text-align: center;}
 
 }
+
+
+/* portrait iPad */
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait){
+
+#how-it-works,
+#emailform { padding: 10% 10% 20% 10%; }
+
+}
+
+/* landscape iPad */
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+/*    * { background: blue !important; }*/
+
+}
