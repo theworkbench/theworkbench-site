@@ -136,12 +136,12 @@ form input#name, form input#vhhth-vhhth { margin: 0 0 10px 5px; padding: 2px 5px
 
 header {background: #09070a url(../images/lights-blur.jpg) fixed no-repeat 85% 0%;}
 #intro {background: #09070a url(../images/lights-blur.jpg) fixed no-repeat 85% 0%;}
-#the-space { background: #c91604 url(../images/wip-blur.jpg) fixed repeat 60% 50%;
+#the-space { background: #c91604 url(../images/wip-blur.jpg) fixed repeat 60% 50%;}
 
 }
 
 /* landscape iPad */
-@media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape) {
 
 #how-it-works,
 #emailform { padding: 10% 10% 20% 10%; }
