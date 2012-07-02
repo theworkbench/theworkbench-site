@@ -114,8 +114,8 @@ header p { text-align: center;}
 
 #how-it-works h2 { color: #ffac0e; }
 #how-it-works p { text-align: center; }
-#how-it-works li { border-radius: 0; background: transparent; color: #ffac0e; font-family: "din-condensed-web", sans-serif; font-size: 47px; letter-spacing: -0.04em; line-height: 35px;  display: inline-table; width: auto; height: auto; text-align: center; vertical-align: middle; margin: 10px 15px; padding-top: 0; }
-#how-it-works li span { text-transform: uppercase; font-size: 22px; margin-bottom: -6px; letter-spacing: normal; display: block; }
+#how-it-works li { border-radius: 0; background: transparent; color: #ffac0e; display: block; font-family: "din-condensed-web", sans-serif; font-size: 20px; letter-spacing: -0.04em; line-height: 35px;  width: auto; height: auto; text-align: center; vertical-align: middle; margin: 10px 4px; padding-top: 0; }
+#how-it-works li span { text-transform: uppercase; font-size: 18px; margin: -10px 0 0 0; letter-spacing: normal; display: block; }
 
 
 #whos-here h2 { color: #c91604; }
@@ -123,6 +123,7 @@ header p { text-align: center;}
 #whos-here a { opacity: 1; }
 
 #emailform h2 { margin: 0 0 20px 0; text-align: center;}
+form input#name, form input#vhhth-vhhth { margin: 0 0 10px 5px; padding: 2px 5px; width: 100%;}
 
 }
 
@@ -133,10 +134,17 @@ header p { text-align: center;}
 #how-it-works,
 #emailform { padding: 10% 10% 20% 10%; }
 
+header {background: #09070a url(../images/lights-blur.jpg) fixed no-repeat 85% 0%;}
+#intro {background: #09070a url(../images/lights-blur.jpg) fixed no-repeat 85% 0%;}
+#the-space { background: #c91604 url(../images/wip-blur.jpg) fixed repeat 60% 50%;
+
 }
 
 /* landscape iPad */
 @media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-/*    * { background: blue !important; }*/
+
+#how-it-works,
+#emailform { padding: 10% 10% 20% 10%; }
+#the-space { background: #c91604 url(../images/wip-blur.jpg) fixed repeat 30% 50%;
 
 }
