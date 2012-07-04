@@ -60,6 +60,8 @@ header { padding: 3% 40% 2% 7%; background: #09070a url(../images/lights-blur.jp
 header p {width: 567px; text-align: right;}
 #intro {  padding: 4% 40% 20% 7%; background: #09070a url(../images/lights-blur.jpg) fixed no-repeat 100% 0%;  }
 #intro p { max-width: 450px;}
+#intro p em,
+#the-space p em {display: block; font-size: 65%; font-style: normal;}
 
 #the-space { background: #c91604 url(../images/wip-blur.jpg) fixed repeat 50% 50%; background-size: cover; padding: 0 0 180px 0; overflow-x: hidden; }
 #the-space h2 { background: rgba(191,21,4,0.7) url(../images/iconfade.png) fixed top center; color: #fff; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 127px; line-height: 74px; text-transform: uppercase; letter-spacing: -0.07em; padding: 32px 0 0 15px; margin-bottom: 140px; }
