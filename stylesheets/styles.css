@@ -21,13 +21,17 @@ header p { margin: 0;  font-family: "din-condensed-web", sans-serif; font-size: 
 #intro a { color: #fff;  }
 #intro a:hover { color: #fca60e; text-decoration: none;}
 
+
+#launch-promo { }
+
+
 #how-it-works { background: #1b1b1b; color: #fff; }
 
 
 #how-it-works ul { margin: 0 auto; padding: 0; list-style: none; }
-#how-it-works li { border-radius: 50%; background: #ffac0e; color: #000; font-family: "din-condensed-web", sans-serif; font-size: 51px; letter-spacing: -0.04em; line-height: 35px;  display: inline-table; width: 130px; height: 95px; text-align: center; vertical-align: middle; margin: 10px; padding-top: 35px; }
-#how-it-works li span { text-transform: uppercase; font-size: 22px; margin-bottom: -6px; letter-spacing: normal; display: block; }
-#how-it-works a { color: #fff; }
+#membership-details h3 { font-weight: normal; font-family:  "din-condensed-web", sans-serif; font-size: 21px; text-transform: uppercase; color:#fca60e; margin-bottom: 0; padding-bottom: 0; }
+#membership-details ul h3 em { font-style: normal; font-size: 42px; display: block; }
+#membership-details #additional-days h3 { font-size: 30px; display: block; }
 
 
 #whos-here ul { margin: 0; padding: 0; list-style: none; }
@@ -58,23 +62,41 @@ form button:active { background: #ffac0e; }
 
 header { padding: 3% 40% 2% 7%; background: #09070a url(../images/lights-blur.jpg) fixed no-repeat 100% 0%; border-bottom: 0 none; }
 header p {width: 567px; text-align: right;}
-#intro {  padding: 4% 40% 20% 7%; background: #09070a url(../images/lights-blur.jpg) fixed no-repeat 100% 0%;  }
+#intro {  padding: 4% 40% 8% 7%; background: #09070a url(../images/lights-blur.jpg) fixed no-repeat 100% 0%;  }
 #intro p { max-width: 450px;}
+#intro p em,
+#the-space p em {display: block; font-size: 65%; font-style: normal;}
+
+#launch-promo div { margin: 55px 15% 55px 7%; }
+#launch-promo h2, #launch-promo h2 .zomgyay { color: #BF1504; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 87px; line-height: 0.8; text-transform: uppercase; letter-spacing: -0.06em; width: 360px; float: left;}
+#launch-promo h2 .zomgyay { color: #FFAC0E; }
+#launch-promo p { margin-left: 370px; }
+
 
 #the-space { background: #c91604 url(../images/wip-blur.jpg) fixed repeat 50% 50%; background-size: cover; padding: 0 0 180px 0; overflow-x: hidden; }
 #the-space h2 { background: rgba(191,21,4,0.7) url(../images/iconfade.png) fixed top center; color: #fff; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 127px; line-height: 74px; text-transform: uppercase; letter-spacing: -0.07em; padding: 32px 0 0 15px; margin-bottom: 140px; }
 #the-space h2 span { font-size: 38px; letter-spacing: normal; margin-right: -10px; position: relative; top: -62px; border-bottom: 5px solid #fff; }
-#the-space p { background: rgba(0,0,0,0.77) url(../images/iconfade.png) fixed top center; color: #fff; width: 23%; min-width: 300px; /*position: relative; right: -68%;*/ float: left; clear: left; padding: 15px 4.5% 15px 5%; margin: 0; }
+#the-space p { background: rgba(0,0,0,0.77) url(../images/iconfade.png) fixed top center; color: #fff; width: 25%; min-width: 300px; /*position: relative; right: -68%;*/ float: left; clear: left; padding: 15px 4.5% 15px 7%; margin: 0; }
 #the-space p:last-child { padding-bottom: 64px; }
 #the-space p.first { padding-top: 64px; } /* I know, I know, this is a dirty hack. Please fix me. */
 #the-space a { color: #fff; }
 
-#how-it-works { background: #fff; color: #222; clear: right; padding: 5% 30% 10% 400px; }
+#how-it-works { background: #fff url(../images/nametag.svg) scroll no-repeat -7% 10%; background-size: 33%;  color: #222; clear: right; padding: 5% 8% 7% 32%; }
 #how-it-works h2 { color: #ffac0e; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 117px; line-height: 0.8; text-transform: uppercase; letter-spacing: -0.06em;}
-#how-it-works li { -webkit-transition: 0.32s all ease-out; }
-#how-it-works li:hover { -webkit-transform: scale(1.08); -webkit-transition: 0.1s all ease-out; }
 #how-it-works a { color: #bf1504; }
 
+#how-it-works #membership-details { margin: 35px 0 20px 0; background: rgba(255,255,255,0.75); }
+#how-it-works #membership-details li { width: 30%; display: table-cell; border-right: 1px dotted #dcdcdc; padding: 15px 2% 10px 2%; -webkit-transition: all 0.3s ease-in; }
+#how-it-works #membership-details li:hover { background: #fffaf3;  -webkit-transition: all 0.3s ease-in; }
+#how-it-works #membership-details li:first-child { padding-left: 0; width: 28%;}
+#how-it-works #membership-details li:last-child { border-right: none; }
+#membership-details ul p, #additional-days p { font-size: 16px; line-height: 1.25em; margin: 0.4em 0; }
+#membership-details ul p.price { font-size: 22px; }
+#membership-details #additional-days { margin-top: -4em; border-top: 3px solid #fca60e; width: 61.8%; text-align: center; padding: 15px 2% 5px 2%; background: #fff; }
+
+#membership-details a.register-interest { font-style: normal; color: #666; background: #eaeaea; border-radius: 3px; padding: 4px 7px; text-decoration: none; margin: 8px 0 0 0;  -webkit-transition: all 0.3s ease-in; }
+#membership-details li:hover a.register-interest { background: #fca60e; color: #fff; -webkit-transition: all 0.3s ease-in; }
+#membership-details li:hover a.register-interest:hover { background: #BF1504;  color: #fff; -webkit-transition: all 0.15s ease-in; }
 
 #whos-here { background: #141c1f; color: #fff; padding: 80px 40px; }
 #whos-here h2 { color: #ffac0e; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 99px; line-height: 82px; text-transform: uppercase; letter-spacing: -0.06em; width: 255px; float: left;  }
@@ -104,24 +126,46 @@ header { padding: 10px; 0;}
 header h1 {width: 100%; height: 62px; margin:0;  background-position: 50% 50%; background-size: contain; }
 header p { text-align: center;}
 
-#intro, #the-space, #how-it-works, #whos-here { padding: 10% 10% 20% 10%; }
+#intro, #launch-promo, #the-space, #how-it-works, #whos-here { padding: 10% 10% 15% 10%; }
 
-#intro h2, #the-space h2, #how-it-works h2, #whos-here h2, #emailform h2 { font-family: "din-condensed-web", "Arial Narrow", sans-serif; text-align: center; text-transform: uppercase; font-weight: 200; font-size: 39px; letter-spacing: -0.02em; }
+#intro h2, #launch-promo h2, #the-space h2, #how-it-works h2, #whos-here h2, #emailform h2 { font-family: "din-condensed-web", "Arial Narrow", sans-serif; text-align: center; text-transform: uppercase; font-weight: 200; font-size: 39px; letter-spacing: -0.02em; }
 
 #the-space { background: #fff; color: #000; }
 #the-space h2 { color: #c91604;}
 #the-space a { color: #c91604; }
 
 #how-it-works h2 { color: #ffac0e; }
-#how-it-works p { text-align: center; }
-#how-it-works li { border-radius: 0; background: transparent; color: #ffac0e; font-family: "din-condensed-web", sans-serif; font-size: 47px; letter-spacing: -0.04em; line-height: 35px;  display: inline-table; width: auto; height: auto; text-align: center; vertical-align: middle; margin: 10px 15px; padding-top: 0; }
-#how-it-works li span { text-transform: uppercase; font-size: 22px; margin-bottom: -6px; letter-spacing: normal; display: block; }
+#how-it-works a { color: #fff; }
 
+#launch-promo h2 { color: #FFAC0E; }
 
 #whos-here h2 { color: #c91604; }
 #whos-here ul { margin: 0 -8%; }
 #whos-here a { opacity: 1; }
 
 #emailform h2 { margin: 0 0 20px 0; text-align: center;}
+form input#name, form input#vhhth-vhhth { margin: 0 0 10px 5px; padding: 2px 5px; width: 100%;}
+
+}
+
+
+/* portrait iPad */
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait){
+
+#how-it-works,
+#emailform { padding: 10% 10% 20% 10%; }
+
+header {background: #09070a url(../images/lights-blur.jpg) fixed no-repeat 85% 0%;}
+#intro {background: #09070a url(../images/lights-blur.jpg) fixed no-repeat 85% 0%;}
+#the-space { background: #c91604 url(../images/wip-blur.jpg) fixed repeat 60% 50%;}
+
+}
+
+/* landscape iPad */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape) {
+
+#how-it-works,
+#emailform { padding: 10% 10% 20% 10%; }
+#the-space { background: #c91604 url(../images/wip-blur.jpg) fixed repeat 30% 50%;
 
 }
