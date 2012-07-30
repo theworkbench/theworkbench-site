@@ -1,13 +1,26 @@
 $(document).ready(function(){
 	$("#register-basic").colorbox({
 		fixed: true,
-		open: true,
 		inline:true,
 		overlayClose: true,
 		escKey: true,
-		transition: "fade" //,
-		// width:"50%"
+		transition: "elastic",
+		width:"50%"
 	});
-	$("#register-lite").colorbox({inline:true, width:"50%"});
-	$("#register-full").colorbox({inline:true, width:"50%"});
+	$("#register-lite").colorbox({
+		fixed: true,
+		inline:true,
+		overlayClose: true,
+		escKey: true,
+		transition: "elastic",
+		width:"50%"
+	});
+	$("#register-full").colorbox({
+		fixed: true,
+		inline:true,
+		overlayClose: true,
+		escKey: true,
+		transition: "elastic",
+		width:"50%"
+	});
 });
