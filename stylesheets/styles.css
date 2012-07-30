@@ -62,7 +62,7 @@ form button:active { background: #ffac0e; }
 	.interest-form .checkbox span {float: left; margin-left: 5px; width: auto;}
 	.interest-form .checkbox input {float: left; margin-left: 54px;}
 	.interest-form form input.text {background-color: #fff; border-radius: 2px; border: none; float: left; font: 19px/1.3em "chaparral-pro", georgia, serif; color: #000; margin: 0 0 10px 5px; padding: 2px 5px; }
-	.interest-form form button {margin: 15px 0 0 54px;}
+	.interest-form form button {clear: both; margin: 15px 0 0 54px;}
 
 
 /* Desktop version */
