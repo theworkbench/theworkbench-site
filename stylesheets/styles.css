@@ -41,12 +41,12 @@ header p { margin: 0;  font-family: "din-condensed-web", sans-serif; font-size: 
 #whos-here a:hover { opacity: 1; -webkit-transition: 0.1s all ease-out; }
 
 #emailform { background: #141c1f; color: #fff; padding: 80px 40px;  }
+
 #emailform h2 {color: #ffac0e; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 69px; line-height: 0.8; text-transform: uppercase; letter-spacing: -0.06em;  }
 
 
-
 form label { display: inline; }
-form input#name, form input#vhhth-vhhth { font: 19px/1.3em "chaparral-pro", georgia, serif; color: #fff; background-color: #000; border-radius: 2px; border: none; margin: 0 0 10px 5px; padding: 2px 5px;  }
+form input.text {background-color: #000; border-radius: 2px; border: none; font: 19px/1.3em "chaparral-pro", georgia, serif; color: #fff; margin: 0 0 10px 5px; padding: 2px 5px;  }
 ::-webkit-input-placeholder { color: rgba(255,255,255,0.65); font-style: italic;}
 :-moz-placeholder { color: rgba(255,255,255,0.65); font-style: italic;}
 form button { text-transform: uppercase; font-weight: 400; font: 19px/22px "din-condensed-web", sans-serif; color: #222; background: #fff; border: none; padding: 5px 10px; margin: 4px 0;  }
@@ -54,11 +54,20 @@ form button:hover { background: #ffac0e;  }
 form button:active { background: #ffac0e; }
 
 
+.interest-form { background: #030303 url(../images/iconfade.png) fixed bottom center; border: 5px solid #FFAC0E; border-radius: 15px; color: #fff; padding: 80px 40px; }
+	.interest-form form {margin: 0; padding: 0;}
+	.interest-form h2 {color: #ffac0e; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 69px; line-height: 0.8; margin: 0; text-transform: uppercase; letter-spacing: -0.06em;  }
+	.interest-form label {clear: both; display: block; margin: 0 0 20px 0;}
+	.interest-form span {display: block; float: left; width: 50px;}
+	.interest-form .checkbox span {float: left; margin-left: 5px; width: auto;}
+	.interest-form .checkbox input {float: left; margin-left: 54px;}
+	.interest-form form input.text {background-color: #fff; border-radius: 2px; border: none; float: left; font: 19px/1.3em "chaparral-pro", georgia, serif; color: #000; margin: 0 0 10px 5px; padding: 2px 5px; }
+	.interest-form form button {margin: 15px 0 0 54px;}
 
 
 /* Desktop version */
 
-@media screen and (min-width: 641px) {	
+@media screen and (min-width: 641px) {
 
 header { padding: 3% 40% 2% 7%; background: #09070a url(../images/lights-blur.jpg) fixed no-repeat 100% 0%; border-bottom: 0 none; }
 header p {width: 567px; text-align: right;}
