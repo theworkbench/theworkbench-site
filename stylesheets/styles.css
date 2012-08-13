@@ -21,10 +21,6 @@ header p { margin: 0;  font-family: "din-condensed-web", sans-serif; font-size: 
 #intro a { color: #fff;  }
 #intro a:hover { color: #fca60e; text-decoration: none;}
 
-
-#launch-promo { }
-
-
 #how-it-works { background: #1b1b1b; color: #fff; }
 
 
@@ -75,12 +71,6 @@ header p {width: 567px; text-align: right;}
 #intro p { max-width: 450px;}
 #intro p em,
 #the-space p em {display: block; font-size: 65%; font-style: normal;}
-
-#launch-promo div { margin: 55px 15% 55px 7%; }
-#launch-promo h2, #launch-promo h2 .zomgyay { color: #BF1504; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 87px; line-height: 0.8; text-transform: uppercase; letter-spacing: -0.06em; width: 360px; float: left;}
-#launch-promo h2 .zomgyay { color: #FFAC0E; }
-#launch-promo p { margin-left: 370px; }
-
 
 #the-space { background: #c91604 url(../images/wip-blur.jpg) fixed repeat 50% 50%; background-size: cover; padding: 0 0 180px 0; overflow-x: hidden; }
 #the-space h2 { background: rgba(191,21,4,0.7) url(../images/iconfade.png) fixed top center; color: #fff; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 127px; line-height: 74px; text-transform: uppercase; letter-spacing: -0.07em; padding: 32px 0 0 15px; margin-bottom: 140px; }
@@ -135,9 +125,9 @@ header { padding: 10px; 0;}
 header h1 {width: 100%; height: 62px; margin:0;  background-position: 50% 50%; background-size: contain; }
 header p { text-align: center;}
 
-#intro, #launch-promo, #the-space, #how-it-works, #whos-here { padding: 10% 10% 15% 10%; }
+#intro, #the-space, #how-it-works, #whos-here { padding: 10% 10% 15% 10%; }
 
-#intro h2, #launch-promo h2, #the-space h2, #how-it-works h2, #whos-here h2, #emailform h2 { font-family: "din-condensed-web", "Arial Narrow", sans-serif; text-align: center; text-transform: uppercase; font-weight: 200; font-size: 39px; letter-spacing: -0.02em; }
+#intro h2, #the-space h2, #how-it-works h2, #whos-here h2, #emailform h2 { font-family: "din-condensed-web", "Arial Narrow", sans-serif; text-align: center; text-transform: uppercase; font-weight: 200; font-size: 39px; letter-spacing: -0.02em; }
 
 #the-space { background: #fff; color: #000; }
 #the-space h2 { color: #c91604;}
@@ -145,8 +135,6 @@ header p { text-align: center;}
 
 #how-it-works h2 { color: #ffac0e; }
 #how-it-works a { color: #fff; }
-
-#launch-promo h2 { color: #FFAC0E; }
 
 #whos-here h2 { color: #c91604; }
 #whos-here ul { margin: 0 -8%; }
