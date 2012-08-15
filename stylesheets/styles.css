@@ -21,9 +21,6 @@ header p { margin: 0;  font-family: "din-condensed-web", sans-serif; font-size: 
 #intro a { color: #fff;  }
 #intro a:hover { color: #fca60e; text-decoration: none;}
 
-#how-it-works { background: #1b1b1b; color: #fff; }
-
-
 #how-it-works ul { margin: 0 auto; padding: 0; list-style: none; }
 #membership-details h3 { font-weight: normal; font-family:  "din-condensed-web", sans-serif; font-size: 21px; text-transform: uppercase; color:#fca60e; margin-bottom: 0; padding-bottom: 0; }
 #membership-details ul h3 em { font-style: normal; font-size: 42px; display: block; }
@@ -60,6 +57,8 @@ form button:active { background: #ffac0e; }
 	.interest-form form input.text {background-color: #fff; border-radius: 2px; border: none; float: left; font: 19px/1.3em "chaparral-pro", georgia, serif; color: #000; margin: 0 0 10px 5px; padding: 2px 5px; }
 	.interest-form form button {clear: both; margin: 15px 0 0 54px;}
 
+/* colorbox */
+#colorbox {width: 50%;}
 #cboxClose {background: #030303; color: #fff; cursor: pointer; position: absolute; right: 1em; top: 1em;}
 #cboxOverlay {background: #030303; cursor: pointer; height: 100%; left: 0; position: fixed; top: 0; width: 100%;}
 
@@ -96,7 +95,9 @@ header p {width: 567px; text-align: right;}
 #membership-details ul p.price { font-size: 22px; }
 #membership-details #additional-days { margin-top: -4em; border-top: 3px solid #fca60e; width: 61.8%; text-align: center; padding: 15px 2% 5px 2%; background: #fff; }
 
-#membership-details a.register-interest { font-style: normal; color: #666; background: #eaeaea; border-radius: 3px; padding: 4px 7px; text-decoration: none; margin: 8px 0 0 0;  -webkit-transition: all 0.3s ease-in; }
+#membership-details a.register-interest { font-style: normal; color: #666;
+	background: #eaeaea; border-radius: 3px; padding: 4px 7px;
+	text-decoration: none; margin: 8px 0 0 0;  -webkit-transition: all 0.3s ease-in; }
 #membership-details li:hover a.register-interest { background: #fca60e; color: #fff; -webkit-transition: all 0.3s ease-in; }
 #membership-details li:hover a.register-interest:hover { background: #BF1504;  color: #fff; -webkit-transition: all 0.15s ease-in; }
 
@@ -117,9 +118,6 @@ header p {width: 567px; text-align: right;}
 }
 
 
-
-
-
 /* Mobile version */
 
 @media screen and (max-width: 640px) {
@@ -137,7 +135,7 @@ header p { text-align: center;}
 #the-space a { color: #c91604; }
 
 #how-it-works h2 { color: #ffac0e; }
-#how-it-works a { color: #fff; }
+#how-it-works a { color: #c91604; }
 
 #whos-here h2 { color: #c91604; }
 #whos-here ul { margin: 0 -8%; }
@@ -146,12 +144,22 @@ header p { text-align: center;}
 #emailform h2 { margin: 0 0 20px 0; text-align: center;}
 form input#name, form input#vhhth-vhhth { margin: 0 0 10px 5px; padding: 2px 5px; width: 100%;}
 
-}
+#colorbox {width: 300px;}
+.interest-form {padding: 40px 10px;}
+	.interest-form h2 {font-size: 30px;}
+	.interest-form .checkbox span {width: 150px;}
+	.interest-form form input.text {font-size: 12px;}
+	.interest-form button {font-size: 12.5px; margin: 15px 0 0 0;}
+
+#cboxOverlay {height: 285em; position: absolute;}
+
+/* end media query */}
 
 
 /* portrait iPad */
 @media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait){
 
+#how-it-works { background: #fff;}
 #how-it-works,
 #emailform { padding: 10% 10% 20% 10%; }
 
@@ -159,13 +167,18 @@ header {background: #09070a url(../images/lights-blur.jpg) fixed no-repeat 85% 0
 #intro {background: #09070a url(../images/lights-blur.jpg) fixed no-repeat 85% 0%;}
 #the-space { background: #c91604 url(../images/wip-blur.jpg) fixed repeat 60% 50%;}
 
-}
+.interest-form button {float: left; margin: 15px 0 0 0;}
+
+/* end media query */}
 
 /* landscape iPad */
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape) {
 
+#how-it-works { background: #fff;}
 #how-it-works,
 #emailform { padding: 10% 10% 20% 10%; }
-#the-space { background: #c91604 url(../images/wip-blur.jpg) fixed repeat 30% 50%;
+#the-space { background: #c91604 url(../images/wip-blur.jpg) fixed repeat 30% 50%;}
 
-}
+.interest-form button {float: left; margin: 15px 0 0 0;}
+
+/* end media query */}

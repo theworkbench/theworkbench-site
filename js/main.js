@@ -1,20 +1,14 @@
 $(document).ready(function(){
 	$("#register-basic").colorbox({
-		fixed: true,
 		inline:true,
-		transition: "elastic",
-		width:"50%"
+		transition: "elastic"
 	});
 	$("#register-lite").colorbox({
-		fixed: true,
 		inline:true,
-		transition: "elastic",
-		width:"50%"
+		transition: "elastic"
 	});
 	$("#register-full").colorbox({
-		fixed: true,
 		inline:true,
-		transition: "elastic",
-		width:"50%"
+		transition: "elastic"
 	});
 });
