@@ -9,6 +9,7 @@ section p, section li { font: 21px/1.25em "chaparral-pro", georgia, serif; }
 
 a { font-style: italic; }
 
+.clear {clear: both;}
 
 
 
@@ -43,11 +44,11 @@ form input.text {background-color: #000; border-radius: 2px; border: none; font:
 ::-webkit-input-placeholder { color: rgba(255,255,255,0.65); font-style: italic;}
 :-moz-placeholder { color: rgba(255,255,255,0.65); font-style: italic;}
 form button { text-transform: uppercase; font-weight: 400; font: 19px/22px "din-condensed-web", sans-serif; color: #222; background: #fff; border: none; padding: 5px 10px; margin: 4px 0;  }
-form button:hover { background: #ffac0e;  }
-form button:active { background: #ffac0e; }
+form button:hover { background: #ffac0e;}
+form button:active { background: #ffac0e;}
 
 
-.interest-form { background: #030303 url(../images/iconfade.png) fixed bottom center; border: 5px solid #FFAC0E; border-radius: 15px; color: #fff; padding: 80px 40px; }
+.interest-form { background: #030303 url(../images/iconfade.png) fixed bottom center; border: 5px solid #FFAC0E; border-radius: 15px; color: #fff; float: left; padding: 80px 40px;}
 	.interest-form form {margin: 0; padding: 0;}
 	.interest-form h2 {color: #ffac0e; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 69px; line-height: 0.8; margin: 0; text-transform: uppercase; letter-spacing: -0.06em;  }
 	.interest-form label {clear: both; display: block; margin: 0 0 20px 0;}
@@ -149,7 +150,7 @@ form input#name, form input#vhhth-vhhth { margin: 0 0 10px 5px; padding: 2px 5px
 	.interest-form h2 {font-size: 30px;}
 	.interest-form .checkbox span {width: 150px;}
 	.interest-form form input.text {font-size: 12px;}
-	.interest-form button {font-size: 12.5px; margin: 15px 0 0 0;}
+	.interest-form button {float: left; font-size: 12.5px; margin: 15px 0 0 0;}
 
 #cboxOverlay {height: 285em; position: absolute;}
 
