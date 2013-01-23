@@ -13,9 +13,9 @@ a { font-style: italic; }
 
 
 
-header { background: #000; color: #fff; border-bottom: 3px solid #fff; }
-header h1 {margin: 0 0 0 -2px; padding: 0; background: url(../images/logo.svg) scroll no-repeat 0 0; width: 591px; height: 81px; text-indent: -1000em; overflow: hidden;}
-header p { margin: 0;  font-family: "din-condensed-web", sans-serif; font-size: 21px; text-transform: uppercase; color:#fca60e; }
+header.header { background: #000; color: #fff; border-bottom: 3px solid #fff; }
+header.header h1 {margin: 0 0 0 -2px; padding: 0; background: url(../images/logo.svg) scroll no-repeat 0 0; width: 591px; height: 81px; text-indent: -1000em; overflow: hidden;}
+header.header p { margin: 0;  font-family: "din-condensed-web", sans-serif; font-size: 21px; text-transform: uppercase; color:#fca60e; }
 
 #intro { padding: 10% 40% 20% 7%; background: #c91604; color: #fff; border-bottom: 3px solid #fff; }
 #intro p { text-align: left; }
@@ -69,10 +69,10 @@ form button:active { background: #ffac0e;}
 
 @media screen and (min-width: 641px) {
 
-header { padding: 12% 40% 2% 7%; background: #09070a url(../images/tomc-foursquare.jpg) fixed no-repeat 100% 0%; background-size:cover; border-bottom: 0 none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+header.header { padding: 12% 40% 2% 7%; background: #09070a url(../images/tomc-foursquare.jpg) fixed no-repeat 100% 0%; background-size:cover; border-bottom: 0 none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
 -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"; }
 /* header p {width: 567px; text-align: right;} */
-header p {width: 487px; text-align: left; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 87px; line-height: 74px; text-transform: uppercase; letter-spacing: -0.07em; color: rgba(0,0,0,0.62); text-shadow: 0 0 0 rgba(0,0,0,0), 1px 1px rgba(255,255,255,0.2); margin: 5% 0 3% 0.5%;}
+header.header p {width: 487px; text-align: left; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 87px; line-height: 74px; text-transform: uppercase; letter-spacing: -0.07em; color: rgba(0,0,0,0.62); text-shadow: 0 0 0 rgba(0,0,0,0), 1px 1px rgba(255,255,255,0.2); margin: 5% 0 3% 0.5%;}
 #intro {  padding: 4% 5% 3% 7.5%; background-color: #fff; color: #121212;  }
 #intro a { color: #000;}
 #intro p { max-width: 520px;}
@@ -90,11 +90,15 @@ nav li a { display: inline-block; background: rgba(0,0,0,0.45); color: #fff; pad
 nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 
 #the-space { background: #c91604 url(../images/standing.jpg) fixed repeat 50% 5%; background-size: cover; padding: 0 0 180px 0; overflow-x: hidden; }
-#the-space h2 { background: rgba(191,21,4,0.7) url(../images/iconfade.png) fixed top center; color: #fff; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 127px; line-height: 74px; text-transform: uppercase; letter-spacing: -0.07em; padding: 32px 0 0 15px; margin-bottom: 140px; }
+#the-space header {background: rgba(191,21,4,0.7) url(../images/iconfade.png) fixed top center; color: #fff; margin-bottom: 140px;}
+#the-space h2 {font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 127px; line-height: 74px; padding: 32px 0 0 15px; text-transform: uppercase; letter-spacing: -0.07em; }
 #the-space h2 span { font-size: 38px; letter-spacing: normal; margin-right: -10px; position: relative; top: -62px; border-bottom: 5px solid #fff; }
-#the-space p { background: rgba(0,0,0,0.77) url(../images/iconfade.png) fixed top center; color: #fff; width: 32%; min-width: 300px; /*position: relative; right: -68%;*/ float: left; clear: left; padding: 15px 4.5% 15px 7%; margin: 0; }
-#the-space p:last-child { padding-bottom: 64px; }
-#the-space p.first { padding-top: 64px; } /* I know, I know, this is a dirty hack. Please fix me. */
+#the-space header p {background: rgb(191,21,4); color: #fff; font-size: 0.8em; overflow: auto; padding: 0.5em 1em;}
+#the-space header span.date {margin-left: 1em;}
+#the-space header a.lastfm {float: right;}
+#the-space section p { background: rgba(0,0,0,0.77) url(../images/iconfade.png) fixed top center; color: #fff; width: 32%; min-width: 300px; float: left; clear: left; padding: 15px 4.5% 15px 7%; margin: 0; }
+#the-space section p:last-child { padding-bottom: 64px; }
+#the-space section p.first { padding-top: 64px; } /* I know, I know, this is a dirty hack. Please fix me. */
 #the-space a { color: #fff; }
 
 #the-neighbourhood {background: #c91604 url(../images/partners.jpg) fixed repeat 90% 30%; overflow: auto; padding: 11% 0 11% 0;}
@@ -144,9 +148,9 @@ nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 
 @media screen and (max-width: 640px) {
 
-header { padding: 10px; 0;}
-header h1 {width: 100%; height: 62px; margin:0;  background-position: 50% 50%; background-size: contain; }
-header p { text-align: center;}
+header.header { padding: 10px; 0;}
+header.header h1 {width: 100%; height: 62px; margin:0;  background-position: 50% 50%; background-size: contain; }
+header.header p { text-align: center;}
 
 #intro, #the-space, #how-it-works, #whos-here { padding: 10% 10% 15% 10%; }
 
@@ -189,7 +193,7 @@ form input#name, form input#vhhth-vhhth { margin: 0 0 10px 5px; padding: 2px 5px
 #how-it-works,
 #emailform { padding: 10% 10% 20% 10%; }
 
-header {background: #09070a url(../images/lights-blur.jpg) fixed no-repeat 85% 0%;}
+header.header {background: #09070a url(../images/lights-blur.jpg) fixed no-repeat 85% 0%;}
 #intro {background: #09070a url(../images/lights-blur.jpg) fixed no-repeat 85% 0%;}
 #the-space { background: #c91604 url(../images/wip-blur.jpg) fixed repeat 60% 50%;}
 
