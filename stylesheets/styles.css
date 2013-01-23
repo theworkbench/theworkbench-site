@@ -22,13 +22,14 @@ header.header p { margin: 0;  font-family: "din-condensed-web", sans-serif; font
 #intro a { color: #fff;  }
 #intro a:hover { color: #fca60e; text-decoration: none;}
 
-#how-it-works ul { margin: 0 auto; padding: 0; list-style: none; }
-#membership-details h3 { font-weight: normal; font-family:  "din-condensed-web", sans-serif; letter-spacing: -1px; font-size: 46px; text-transform: uppercase; color:#000; margin: 0; padding: 0; }
-#membership-details h3 span { display: none;}
-#membership-details .membership-pricing td { font-size: 26px; color: #565656; text-transform: uppercase; }
-#membership-details .membership-pricing td strong { font-size: 46px; }
-#how-it-works #membership-details th { display: none; }
-#how-it-works #membership-details .membership-type { display: table-cell; text-align: left;}
+#how-it-works ul, #how-it-works ol, #how-it-works li { margin: 0; padding: 0; list-style: none; }
+#how-it-works ul li { display: inline-block; vertical-align: top; width: 22%; text-align: center; border: 1px solid #efefef; border-radius: 10px;}
+#how-it-works .membership-day-pass { margin-right: 3%; }
+#how-it-works .membership-occasional { border-bottom-right-radius: 0; border-top-right-radius: 0;}
+#how-it-works .membership-part-time { border-radius: 0;}
+#how-it-works .membership-full-time { border-bottom-left-radius: 0; border-top-left-radius: 0;}
+#how-it-works ol li { display: block; width: 100%; margin-right: 0; border: none; border-radius: 0; border-top: 1px dotted #efefef; padding: 0.3em 0;}
+#how-it-works ul h3 { font-family: "din-condensed-web", sans-serif; text-transform: uppercase; letter-spacing: -0.06em; }
 
 
 #whos-here ul { margin: 0; padding: 0; list-style: none; }
@@ -112,14 +113,6 @@ nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 #how-it-works h2 { color: #ffac0e; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 117px; line-height: 0.8; text-transform: uppercase; letter-spacing: -0.06em;}
 #how-it-works a { color: #bf1504; }
 
-#how-it-works #membership-details { margin: 35px 0 20px 0; background: rgba(255,255,255,0.75); padding: 0; border: 0; }
-#how-it-works #membership-details .membership-type, #how-it-works #membership-details td { width: 30%; vertical-align: top; border-right: 1px dotted #dcdcdc; padding: 2px 2% 2px 2%; -webkit-transition: all 0.3s ease-in; }
-#how-it-works #membership-details td:first-child { padding-left: 0; width: 28%;}
-#how-it-works #membership-details td:last-child { border-right: none; }
-#membership-details p, #membership-details li { font-size: 17px; line-height: 1.2em; margin: 0.4em 0; }
-#membership-details .membership-pricing { font-size: 22px; font-family: "din-condensed-web", "Arial Narrow", sans-serif; }
-#membership-details .membership-pricing strong { font-weight: normal;}
-#membership-details #additional-days { margin-top: -5em; border-top: 3px solid #fca60e; width: 61.8%; text-align: center; padding: 15px 2% 5px 2%; background: #fff; }
 
 #membership-details a.register-interest {background: #eaeaea; border-radius: 3px; color: #666; display: inline-block; font-style: normal; padding: 4px 7px; text-decoration: none; margin: 8px 0 0 0;  -webkit-transition: all 0.3s ease-in;}
 #membership-details li:hover a.register-interest { background: #fca60e; color: #fff; -webkit-transition: all 0.3s ease-in; }
@@ -162,8 +155,10 @@ header.header p { text-align: center;}
 
 #how-it-works h2 { color: #ffac0e; }
 #how-it-works a { color: #c91604; }
+#how-it-works ul li { display: block; width: 100%; margin: 0.7em 0; }
+#how-it-works ul li li { margin: 0;}
 
-#how-it-works #membership-details li {margin: 2em 0 2em 0; }
+
 
 #whos-here h2 { color: #c91604; }
 #whos-here ul { margin: 0 -8%; }
