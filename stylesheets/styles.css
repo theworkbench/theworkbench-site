@@ -12,24 +12,29 @@ a { font-style: italic; }
 .clear {clear: both;}
 
 
-
 header.header { background: #000; color: #fff; border-bottom: 3px solid #fff; }
-header.header h1 {margin: 0 0 0 -2px; padding: 0; background: url(../images/logo.svg) scroll no-repeat 0 0; width: 591px; height: 81px; text-indent: -1000em; overflow: hidden;}
+header.header h1 {margin: 0 0 0 -2px; padding: 0; background: url(../images/logo.svg) scroll no-repeat 0 0; width: 618px; height: 88px; text-indent: -1000em; overflow: hidden;}
 header.header p { margin: 0;  font-family: "din-condensed-web", sans-serif; font-size: 21px; text-transform: uppercase; color:#fca60e; }
 
-#intro { padding: 10% 40% 20% 7%; background: #c91604; color: #fff; border-bottom: 3px solid #fff; }
+#intro { padding: 10% 40% 20% 7%; background: #c91604; color: #fff; }
 #intro p { text-align: left; }
 #intro a { color: #fff;  }
 #intro a:hover { color: #fca60e; text-decoration: none;}
 
 #how-it-works ul, #how-it-works ol, #how-it-works li { margin: 0; padding: 0; list-style: none; }
-#how-it-works ul li { display: inline-block; vertical-align: top; width: 22%; text-align: center; border: 1px solid #efefef; border-radius: 10px;}
+#how-it-works ul li { display: inline-block; vertical-align: top; width: 22%; text-align: center; }
 #how-it-works .membership-day-pass { margin-right: 3%; }
 #how-it-works .membership-occasional { border-bottom-right-radius: 0; border-top-right-radius: 0;}
 #how-it-works .membership-part-time { border-radius: 0;}
 #how-it-works .membership-full-time { border-bottom-left-radius: 0; border-top-left-radius: 0;}
 #how-it-works ol li { display: block; width: 100%; margin-right: 0; border: none; border-radius: 0; border-top: 1px dotted #efefef; padding: 0.3em 0;}
-#how-it-works ul h3 { font-family: "din-condensed-web", sans-serif; text-transform: uppercase; letter-spacing: -0.06em; }
+#how-it-works ul h3 { font-family: "din-condensed-web", sans-serif; text-transform: uppercase; letter-spacing: -0.06em; padding: 0.25em 0; background: #ea983b; color: #fff; border-top-right-radius: 10px; border-top-left-radius: 10px; }
+#how-it-works ul li.membership-occasional h3 { background: #5fa278; }
+#how-it-works ul li.membership-part-time h3 { background: #ea983b; }
+#how-it-works ul li.membership-full-time h3 { background: #2b7399; }
+
+#how-it-works ol li a { background: #4a4a4c; color: #ffac0e; border-radius: 4px; font-family: "din-condensed-web", sans-serif; font-size: 0.9em; text-transform: uppercase; letter-spacing: -0.04em; text-decoration: none;font-style: normal; padding: 4px 6px;}
+
 
 
 #whos-here ul { margin: 0; padding: 0; list-style: none; }
@@ -38,9 +43,9 @@ header.header p { margin: 0;  font-family: "din-condensed-web", sans-serif; font
 #whos-here a img { width: 82px; height: 82px; border: none; border-radius: 41px; margin: 0 9px; background: #444; }
 #whos-here a:hover { opacity: 1; -webkit-transition: 0.1s all ease-out; }
 
-#emailform { background: #141c1f; color: #fff; padding: 80px 40px;  }
+#contact { background: #141c1f; color: #fff; padding: 80px 40px;  }
+#contact h2, #contact a { color: #fff;}
 
-#emailform h2 {color: #ffac0e; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 69px; line-height: 0.8; text-transform: uppercase; letter-spacing: -0.06em;  }
 
 
 form label { display: inline; }
@@ -70,11 +75,15 @@ form button:active { background: #ffac0e;}
 
 @media screen and (min-width: 641px) {
 
-header.header { padding: 12% 40% 2% 7%; background: #09070a url(../images/tomc-foursquare.jpg) fixed no-repeat 100% 0%; background-size:cover; border-bottom: 0 none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
--ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"; }
+header.header { padding: 18% 40% 2% 7%; background: #09070a url(../images/foursquare-blur.jpg) fixed no-repeat 100% 0%; background-size:cover; border-bottom: 0 none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/foursquare-blur.jpg', sizingMethod='scale')"; }
 /* header p {width: 567px; text-align: right;} */
-header.header p {width: 487px; text-align: left; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 87px; line-height: 74px; text-transform: uppercase; letter-spacing: -0.07em; color: rgba(0,0,0,0.62); text-shadow: 0 0 0 rgba(0,0,0,0), 1px 1px rgba(255,255,255,0.2); margin: 5% 0 3% 0.5%;}
-#intro {  padding: 4% 5% 3% 7.5%; background-color: #fff; color: #121212;  }
+header.header p {width: 487px; text-align: left; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 107px; line-height: 84px; text-transform: uppercase; letter-spacing: -0.07em; color: #fff; text-shadow: 0 0 0 rgba(0,0,0,0), 1px 1px rgba(255,255,255,0.2); margin: 5% 0 3% 0.5%;}
+header.header p {width: auto; text-align: left; font-family: "chaparral-pro", georgia, serif; font-weight: 200; font-size: 117px; line-height: 104px; text-transform: lowercase; letter-spacing: -0.055em; color: #fff; text-shadow: none; margin: 2% 0 8% 0.5%; text-rendering: optimizeLegibility; }
+header.header p:before { content: "because ";}
+
+
+#intro {  padding: 4% 5% 3% 7.5%; background: url(../images/iconfade.png) fixed top center; color: #121212; }
 #intro a { color: #000;}
 #intro p { max-width: 520px;}
 #intro p.first { max-width: 100%;}
@@ -118,21 +127,21 @@ nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 #membership-details li:hover a.register-interest { background: #fca60e; color: #fff; -webkit-transition: all 0.3s ease-in; }
 #membership-details li:hover a.register-interest:hover { background: #BF1504;  color: #fff; -webkit-transition: all 0.15s ease-in; }
 
-#contact { background: #fff; color: #222; padding: 80px 40px; }
-#contact a { color: #000;}
-#contact h2 {  font-family: "din-condensed-web", "Arial Narrow", sans-serif; text-transform: uppercase; letter-spacing: -0.07em; font-weight: 200; font-size: 87px; line-height: 74px; color: #212121; display: block; margin-bottom: 45px; letter-spacing: -0.03em; width: 100% !important;  }
+
+#contact h2 {font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 87px; line-height: 74px; padding: 32px 0 0 0; text-transform: uppercase; letter-spacing: -0.07em; }
 #contact .streetaddress { display: block; font-size: 32px; margin: 8px 0;}
 #contact .streetaddress a { font-style: normal; }
 
-#contact #bios section { display: inline-block; vertical-align: top; width: 22%; margin: 0 5%;}
-#contact #bios img { width: 150px; height: 150px; border-radius: 75px; }
+#contact #vitals { width: 55%; display: inline-block; vertical-align: top;}
 
+#contact #bios { width: 42%; display: inline-block;}
 
-#emailform { padding: 5% 30% 10% 400px; background: #141c1f url(../images/iconfade.png) fixed top center; }
-#emailform h2 {width: 255px; float: left; }
-#emailform  h2:after { content: " \2192"; }
+#contact #bios section { display: inline-block; vertical-align: top; width: 22%; margin: 0 5%; text-align: center;}
+#contact #bios img { width: 120px; height: 120px; border-radius: 75px; }
+#contact #bios p { font-size: 0.8em; line-height: 1.3em;}
+#contact #bios h3 { font-weight: 200;  }
 
-#emailform p, #emailform form { margin-left: 280px; margin-top: 0;}
+#emailform p, #emailform form { margin-top: 0;}
 
 }
 
@@ -140,6 +149,8 @@ nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 /* Mobile version */
 
 @media screen and (max-width: 640px) {
+
+#nav { display: none;}
 
 header.header { padding: 10px; 0;}
 header.header h1 {width: 100%; height: 62px; margin:0;  background-position: 50% 50%; background-size: contain; }
