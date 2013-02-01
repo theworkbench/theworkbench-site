@@ -7,7 +7,6 @@ body { margin: 0; padding: 0; background: #fff; color: #000; }
 
 section, section p, section li { font: 21px/1.25em "chaparral-pro", georgia, serif; }
 
-a { font-style: italic; }
 
 .clear {clear: both;}
 
@@ -83,7 +82,7 @@ header.header p {width: auto; text-align: left; font-family: "chaparral-pro", ge
 header.header p:before { content: "because ";}
 
 
-#intro {  padding: 4% 5% 3% 7.5%; background: url(../images/iconfade.png) fixed top center; color: #121212; }
+#intro {  padding: 4% 5% 3% 7.5%; background: url(../images/white85trans.png), url(../images/iconfade.png); background-attachment: fixed; background-position: top center; color: #121212; }
 #intro a { color: #000;}
 #intro p { max-width: 520px;}
 #intro p.first { max-width: 100%;}
@@ -105,18 +104,20 @@ nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 #the-space h2 span { font-size: 38px; letter-spacing: normal; margin-right: -10px; position: relative; top: -62px; border-bottom: 5px solid #fff; }
 #the-space header p {background: rgb(191,21,4); color: #fff; font-size: 0.8em; overflow: auto; padding: 0.5em 1em;}
 #the-space header span.date {margin-left: 1em;}
-#the-space header a.lastfm {float: right;}
+#the-space header .musicsources {float: right;}
 #the-space section p { background: rgba(0,0,0,0.77) url(../images/iconfade.png) fixed top center; color: #fff; width: 32%; min-width: 300px; float: left; clear: left; padding: 15px 4.5% 15px 7%; margin: 0; }
 #the-space section p:last-child { padding-bottom: 64px; }
 #the-space section p.first { padding-top: 64px; } /* I know, I know, this is a dirty hack. Please fix me. */
 #the-space a { color: #fff; }
 
-#the-neighbourhood {background: #c91604 url(../images/partners.jpg) fixed repeat 90% 30%; overflow: auto; padding: 11% 0 11% 0;}
-	#the-neighbourhood #map {float: left; height: 100%; margin: 0 2% 0 2%; position: relative; width: 40%;}
-	#the-neighbourhood #hood-talk {background: rgba(250,250,250,0.77); color: #000; float: right; margin-right: 2%; padding: 3%; width: 48%;}
+#the-neighbourhood {background: #fff url(../images/mapimage-1.png) fixed repeat 50% 50%; overflow: auto; padding: 6% 0 11% 0;}
+	#the-neighbourhood #map {float: left; height: 80%; margin: 3.4% 2% 0 2%; position: relative; width: 40%;}
+	#the-neighbourhood #hood-talk {background: rgba(255,255,255,0.8); color: #111; float: right; margin-right: 0; padding: 3% 6% 3% 2%; width: 32%;}
 	#the-neighbourhood iframe {height: 100%; width: 100%;}
 #the-neighbourhood h2 {  font-weight: 200; font-size: 87px; line-height: 74px; color: #212121; display: block; margin-bottom: 45px; letter-spacing: -0.03em; width: 100% !important;  }
-#the-neighbourhood h2 span { font-family: "din-condensed-web", "Arial Narrow", sans-serif; text-transform: uppercase; letter-spacing: -0.07em; color: #616161; display: block; }
+#the-neighbourhood h2 span { font-family: "din-condensed-web", "Arial Narrow", sans-serif; text-transform: uppercase; letter-spacing: -0.07em; color: #ffac0e; display: block; }
+#the-neighbourhood a { color: #000;}
+#the-neighbourhood a:hover { color: #ffac0e; }
 
 #how-it-works { background: #fff url(../images/nametag.svg) scroll no-repeat -7% 10%; background-size: 33%;  color: #222; clear: right; padding: 5% 8% 7% 32%; }
 #how-it-works h2 { color: #ffac0e; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 117px; line-height: 0.8; text-transform: uppercase; letter-spacing: -0.06em;}
@@ -128,19 +129,26 @@ nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 #membership-details li:hover a.register-interest:hover { background: #BF1504;  color: #fff; -webkit-transition: all 0.15s ease-in; }
 
 
+#contact { background: url(../images/black85trans.png), url(../images/mapimage-1.png); background-attachment: fixed; background-position: 50% 50%;}
 #contact h2 {font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 87px; line-height: 74px; padding: 32px 0 0 0; text-transform: uppercase; letter-spacing: -0.07em; }
 #contact .streetaddress { display: block; font-size: 32px; margin: 8px 0;}
 #contact .streetaddress a { font-style: normal; }
+#contact .open-hours { margin-bottom: 2.4em;}
 
 #contact #vitals { width: 55%; display: inline-block; vertical-align: top;}
 
 #contact #bios { width: 42%; display: inline-block;}
 
 #contact #bios section { display: inline-block; vertical-align: top; width: 22%; margin: 0 5%; text-align: center;}
-#contact #bios img { width: 120px; height: 120px; border-radius: 75px; }
+#contact #bios img { width: 120px; height: 120px; border-radius: 75px; -webkit-transition: 0.6s all ease-in; }
+#contact #bios a:hover img { opacity: 0.6; -webkit-transition: 0.1s all ease-out; }
 #contact #bios p { font-size: 0.8em; line-height: 1.3em;}
 #contact #bios h3 { font-weight: 200;  }
+#contact #bios .email { font-family: "chaparral-pro", georgia, serif; font-weight: 200; font-size: 52px; margin: 0.5em 0; text-align: center; }
+#contact #bios .email a { font-style: normal;}
 
+#emailform { margin-top: 1em;}
+#emailform p { font-size: 0.8em; }
 #emailform p, #emailform form { margin-top: 0;}
 
 }
