@@ -30,14 +30,15 @@ header.header p:before { content: "because ";}
 #how-it-works ul li:hover { box-shadow: 0 0 6px rgba(0,0,0,0.3); -webkit-transition: 0.15s all ease-out; }
 #how-it-works ul li:hover li:hover { box-shadow: none; }
 #how-it-works .membership-day-pass { margin-right: 4%; }
-#how-it-works ol li { display: block; width: 100%; margin-right: 0; border: none; border-top: 1px dotted #efefef; padding: 0.3em 0;}
+#how-it-works ol li { display: block; width: 100%; margin-right: 0; border: none; border-top: 1px dotted #efefef; padding: 0.3em 0; font-size: 0.9em; line-height: 1.3em;}
 #how-it-works ul h3 { font-family: "din-condensed-web", sans-serif; font-weight: 200; text-transform: uppercase; letter-spacing: -0.06em; padding: 0.25em 0; background: #4b4c4b; color: #fff; font-size: 28px; }
 #how-it-works ul li.membership-occasional h3 { background: #2b7399; }
 #how-it-works ul li.membership-part-time h3 { background: #b42863; }
 #how-it-works ul li.membership-full-time h3 { background: #80992b; }
 #how-it-works ul li.membership-price { font-family: "din-condensed-web", sans-serif; font-weight: 200; text-transform: uppercase; letter-spacing: -0.06em; font-size: 24px; line-height: 42px; }
+#how-it-works ul li.apply { padding: 0.8em 0 0.7em; }
 
-#how-it-works ol li a { background: #4a4a4c; color: #ffac0e; border-radius: 4px; font-family: "din-condensed-web", sans-serif; font-weight: 200; font-size: 0.9em; text-transform: uppercase; letter-spacing: -0.04em; text-decoration: none;font-style: normal; padding: 4px 6px;}
+#how-it-works ol li a { background: #4a4a4c; color: #ffac0e; border-radius: 4px; font-family: "din-condensed-web", sans-serif; font-weight: 200; font-size: 1.05em; text-transform: uppercase; letter-spacing: -0.04em; text-decoration: none;font-style: normal; padding: 4px 6px; }
 
 
 
@@ -92,7 +93,7 @@ header.header { padding: 18% 40% 2% 7%; background: #09070a url(../images/foursq
 #intro p strong.we-believe span { display: block;}
 
 
-nav { position: fixed; top: 0; right: 6%;}
+nav { position: fixed; top: 0; right: 6%; }
 nav ul, nav li { list-style: none; margin: 0; padding: 0; display: inline;}
 nav li a { display: inline-block; background: rgba(0,0,0,0.45); color: #fff; padding: 18px 10px 5px; margin: 0; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-style: normal; text-transform: uppercase; text-decoration: none; -webkit-transition: all 0.3s ease-in; }
 nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
@@ -217,10 +218,10 @@ form input#name, form input#vhhth-vhhth { margin: 0 0 10px 5px; padding: 2px 5px
 @media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait){
 
 
-#how-it-works { background: #fff;}
-#how-it-works { padding: 10% 10% 20% 10%; }
+#how-it-works { background: #fff; }
+#how-it-works { padding: 10% 10% 5% 10%; }
 
-header.header { background-size: 100% auto; background-repeat: no-repeat; background-color: #232323; background-attachment: scroll; padding: 245px 8% 10px 8%; }
+header.header { background-size: 106% auto; background-repeat: no-repeat; background-color: #232323; background-attachment: scroll; padding: 305px 8% 10px 8%; }
 header.header p { font-size: 86px; line-height: 72px; width: 100%; max-width: 100%; }
 
 #intro {background-position: 85% 0%; }
@@ -230,9 +231,24 @@ header.header p { font-size: 86px; line-height: 72px; width: 100%; max-width: 10
 
 #intro img { width: 250px; margin: -2em 0 0 1%; border-radius: 150px;}
 
+#the-neighbourhood {  padding-bottom: 3%; background-position: 35% 0; background-repeat: no-repeat; background-color: #fff; background-attachment: scroll;}
+#the-neighbourhood #map {float: none; height: 300px; margin: 3.4% auto 0 auto; position: relative; width: 80%;}
+#the-neighbourhood #hood-talk {background: rgba(255,255,255,0.8); color: #111; float: none; padding: 3% 2%; margin: 0 auto; width: 80%;}
+#the-neighbourhood iframe {height: 300px; width: 100%;}
 
-#the-space { background-position: 0 180px; background-size: 100% auto; background-repeat: no-repeat; background-color: #000; background-attachment: scroll; }
+
+#the-space { background-position: 0 170px; background-position: 0 0; background-size: 100% auto; background-repeat: no-repeat; background-color: #000; background-attachment: scroll; padding-bottom: 0;}
 #the-space section p { background-image: none; width: 72%; }
+
+#the-space header {background: transparent none; margin-bottom: 0; padding-bottom: 0;}
+#the-space h2 {font-size: 197px; padding: 355px 18.5% 0 0; text-align: right; margin-bottom: 0; }
+#the-space h2 span { top: -110px; margin-right: -25px; margin-bottom: -100px;}
+#the-space header p { background: rgb(191,21,4); color: #fff; font-size: 0.8em; overflow: auto; padding: 0.5em 4.5% 0.5em 7%; margin: 0; width: 72%; text-indent: -0.6em; }
+#the-space section p { padding: 15px 3.5% 15px 8%; }
+#the-space section p.first { padding-top: 1.6em; }
+#the-space header p span.header { display: none;}
+#the-space header .musicsources {margin-right: -1.5em;}
+
 
 .interest-form button {float: left; margin: 15px 0 0 0;}
 
@@ -249,11 +265,28 @@ header.header p { font-size: 86px; line-height: 72px; width: 100%; max-width: 10
 /* landscape iPad */
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape) {
 
+
+header.header { background-size: 106% auto; background-repeat: no-repeat; background-color: #232323; background-attachment: scroll; padding: 275px 8% 10px 8%; }
+header.header p { font-size: 87px; line-height: 82px; padding-right: 15%; }
+
+#intro p.first { max-width: 85%;}
+
+#the-space { background-position: 0 170px; background-position: 0 0; background-size: 100% auto; background-repeat: no-repeat; background-color: #000; background-attachment: scroll; padding-bottom: 0;}
+#the-space section p { width: 75%; }
+
+
+
 #how-it-works { background: #fff;}
-#how-it-works,
-#emailform { padding: 10% 10% 10% 10%; }
-#the-space { background: #c91604 url(../images/wip-blur.jpg) fixed repeat 30% 50%;}
-#intro h2 { font-size: ;}
+#how-it-works { padding: 10% 10% 10% 10%; }
+
+
+#contact #bios { padding-top: 15px;}
+#contact #bios img { width: 100px; height: 100px; border-radius: 50%; float: left; margin: 0 0.6em 1em 0; }
+#contact #bios h3 { font-size: 25px; padding: 0.8em 0 0; line-height: 29px;}
+#contact #bios p { margin: 0;}
+#contact #bios section { clear: left; float: none; display: block; width: 100%;  text-align: left;}
+#contact #bios .email { font-size: 28px; margin-left: 0; clear: left; }
+
 
 .interest-form button {float: left; margin: 15px 0 0 0;}
 
