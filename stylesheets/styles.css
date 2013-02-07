@@ -13,12 +13,17 @@ section, section p, section li { font: 21px/1.25em "chaparral-pro", georgia, ser
 
 header.header { background: #000; color: #fff; border-bottom: 3px solid #fff; }
 header.header h1 {margin: 0 0 0 -2px; padding: 0; background: url(../images/logo.svg) scroll no-repeat 0 0; width: 618px; height: 88px; text-indent: -1000em; overflow: hidden;}
-header.header p { margin: 0;  font-family: "din-condensed-web", sans-serif; font-size: 21px; text-transform: uppercase; color:#fca60e; }
+header.header p {width: auto; text-align: left; font-family: "chaparral-pro", georgia, serif; font-weight: 200; font-size: 117px; line-height: 104px; text-transform: lowercase; letter-spacing: -0.055em; color: #fff; text-shadow: none; margin: 2% 0 8% 0.5%; text-rendering: optimizeLegibility; }
+header.header p:before { content: "because ";}
+
+
 
 #intro { padding: 10% 40% 20% 7%; background: #c91604; color: #fff; }
 #intro p { text-align: left; }
 #intro a { color: #fff;  }
 #intro a:hover { color: #fca60e; text-decoration: none;}
+#intro img { width: 300px; margin: 0 7%; float: right; border-radius: 150px;}
+
 
 #how-it-works ul, #how-it-works ol, #how-it-works li { margin: 0; padding: 0; list-style: none; }
 #how-it-works ul li { display: inline-block; vertical-align: top; width: 23%; text-align: center; background: #ececec; -webkit-transition: 0.8s all ease-out; }
@@ -77,9 +82,6 @@ form button:active { background: #ffac0e;}
 header.header { padding: 18% 40% 2% 7%; background: #09070a url(../images/foursquare-blur.jpg) fixed no-repeat 100% 0%; background-size:cover; border-bottom: 0 none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
 -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/foursquare-blur.jpg', sizingMethod='scale')"; }
 /* header p {width: 567px; text-align: right;} */
-header.header p {width: 487px; text-align: left; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 107px; line-height: 84px; text-transform: uppercase; letter-spacing: -0.07em; color: #fff; text-shadow: 0 0 0 rgba(0,0,0,0), 1px 1px rgba(255,255,255,0.2); margin: 5% 0 3% 0.5%;}
-header.header p {width: auto; text-align: left; font-family: "chaparral-pro", georgia, serif; font-weight: 200; font-size: 117px; line-height: 104px; text-transform: lowercase; letter-spacing: -0.055em; color: #fff; text-shadow: none; margin: 2% 0 8% 0.5%; text-rendering: optimizeLegibility; }
-header.header p:before { content: "because ";}
 
 
 #intro {  padding: 4% 5% 3% 7.5%; background: url(../images/white85trans.png), url(../images/iconfade.png); background-attachment: fixed; background-position: top center; color: #121212; }
@@ -89,7 +91,6 @@ header.header p:before { content: "because ";}
 #intro p strong.we-believe {  font-weight: 200; font-size: 77px; line-height: 78px; color: #212121; display: block; margin-bottom: 45px; letter-spacing: -0.03em; width: 100% !important;  }
 #intro p strong.we-believe span { display: block;}
 
-#intro img { width: 300px; margin: 0 7%; float: right; border-radius: 150px;}
 
 nav { position: fixed; top: 0; right: 6%;}
 nav ul, nav li { list-style: none; margin: 0; padding: 0; display: inline;}
@@ -100,7 +101,7 @@ nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 #the-space header {background: rgba(191,21,4,0.7) url(../images/iconfade.png) fixed top center; color: #fff; margin-bottom: 140px;}
 #the-space h2 {font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 127px; line-height: 74px; padding: 32px 0 0 15px; text-transform: uppercase; letter-spacing: -0.07em; }
 #the-space h2 span { font-size: 38px; letter-spacing: normal; margin-right: -10px; position: relative; top: -62px; border-bottom: 5px solid #fff; }
-#the-space header p {background: rgb(191,21,4); color: #fff; font-size: 0.8em; overflow: auto; padding: 0.5em 1em;}
+#the-space header p {background: rgb(191,21,4); color: #fff; font-size: 0.8em; overflow: auto; padding: 0.5em 1em; margin: 0;}
 #the-space header span.date {margin-left: 1em;}
 #the-space header .musicsources {float: right;}
 #the-space section p { background: rgba(0,0,0,0.77) url(../images/iconfade.png) fixed top center; color: #fff; width: 32%; min-width: 300px; float: left; clear: left; padding: 15px 4.5% 15px 7%; margin: 0; }
@@ -109,9 +110,9 @@ nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 #the-space a { color: #fff; }
 
 #the-neighbourhood {background: #fff url(../images/mapimage-1.png) fixed repeat 50% 50%; overflow: auto; padding: 6% 0 11% 0;}
-	#the-neighbourhood #map {float: left; height: 80%; margin: 3.4% 2% 0 2%; position: relative; width: 40%;}
+	#the-neighbourhood #map {float: left; height: 600px; margin: 3.4% 2% 0 2%; position: relative; width: 40%;}
 	#the-neighbourhood #hood-talk {background: rgba(255,255,255,0.8); color: #111; float: right; margin-right: 0; padding: 3% 6% 3% 2%; width: 32%;}
-	#the-neighbourhood iframe {height: 100%; width: 100%;}
+	#the-neighbourhood iframe {height: 600px; width: 100%;}
 #the-neighbourhood h2 {  font-weight: 200; font-size: 87px; line-height: 74px; color: #212121; display: block; margin-bottom: 45px; letter-spacing: -0.03em; width: 100% !important;  }
 #the-neighbourhood h2 span { font-family: "din-condensed-web", "Arial Narrow", sans-serif; text-transform: uppercase; letter-spacing: -0.07em; color: #ffac0e; display: block; }
 #the-neighbourhood a { color: #000;}
@@ -158,30 +159,44 @@ nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 
 #nav { display: none;}
 
+body { overflow-x: hidden;}
+
+section p, section li { font-size: 19px; line-height: 1.25em; }
+
+
 header.header { padding: 10px; 0;}
 header.header h1 {width: 100%; height: 62px; margin:0;  background-position: 50% 50%; background-size: contain; }
-header.header p { text-align: center;}
+header.header p { font-size: 67px; line-height: 1.2em;}
 
-#intro, #the-space, #how-it-works, #whos-here { padding: 10% 10% 15% 10%; }
 
-#intro h2, #the-space h2, #how-it-works h2, #whos-here h2, #emailform h2 { font-family: "din-condensed-web", "Arial Narrow", sans-serif; text-align: center; text-transform: uppercase; font-weight: 200; font-size: 39px; letter-spacing: -0.02em; }
+
+#intro, #the-space, #how-it-works,#the-neighbourhood { padding: 10% 10% 15% 10%; }
+
+#intro h2, #the-space h2, #how-it-works h2, #whos-here h2, #contact h2, #the-neighbourhood h2 { font-family: "din-condensed-web", "Arial Narrow", sans-serif; text-align: center; text-transform: uppercase; font-weight: 200; font-size: 39px; letter-spacing: -0.02em; }
+#intro img  { width: 100%; height: auto; overflow: hidden; border-radius: 0; margin: 0.5em 0; }
 
 #the-space { background: #fff; color: #000; }
 #the-space h2 { color: #c91604;}
-#the-space a { color: #c91604; }
+#the-space a, #the-neighbourhood a { color: #c91604; }
 
 #how-it-works h2 { color: #ffac0e; }
 #how-it-works a { color: #c91604; }
 #how-it-works ul li { display: block; width: 100%; margin: 0.7em 0; }
 #how-it-works ul li li { margin: 0;}
+#how-it-works ol li { padding: 1px 0;}
+#how-it-works ul li.membership-price { line-height: 25px; }
 
 
+#the-neighbourhood map, #the-neighbourhood iframe { display: none; }
 
-#whos-here h2 { color: #c91604; }
-#whos-here ul { margin: 0 -8%; }
-#whos-here a { opacity: 1; }
 
-#membership-details td, #membership-details th { display: in;}
+#contact #bios img { width: 60px; height: 60px; border-radius: 50%; float: left; margin: 0 0.6em 1em -20px; }
+#contact #bios h3 { font-size: 21px; margin: 2em 0 0; line-height: 20px;}
+#contact #bios p { margin: 0;}
+#contact #bios section { clear: left;}
+#contact #bios p.email { clear: both; text-align: center; font-size: 24px; margin: 2em 0 0.5em 0; }
+
+
 
 #emailform h2 { margin: 0 0 20px 0; text-align: center;}
 form input#name, form input#vhhth-vhhth { margin: 0 0 10px 5px; padding: 2px 5px; width: 100%;}
@@ -201,15 +216,33 @@ form input#name, form input#vhhth-vhhth { margin: 0 0 10px 5px; padding: 2px 5px
 /* portrait iPad */
 @media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait){
 
-#how-it-works { background: #fff;}
-#how-it-works,
-#emailform { padding: 10% 10% 20% 10%; }
 
-header.header {background: #09070a url(../images/lights-blur.jpg) fixed no-repeat 85% 0%;}
-#intro {background: #09070a url(../images/lights-blur.jpg) fixed no-repeat 85% 0%;}
-#the-space { background: #c91604 url(../images/wip-blur.jpg) fixed repeat 60% 50%;}
+#how-it-works { background: #fff;}
+#how-it-works { padding: 10% 10% 20% 10%; }
+
+header.header { background-size: 100% auto; background-repeat: no-repeat; background-color: #232323; background-attachment: scroll; padding: 245px 8% 10px 8%; }
+header.header p { font-size: 86px; line-height: 72px; width: 100%; max-width: 100%; }
+
+#intro {background-position: 85% 0%; }
+#intro p.first { max-width: 90%;}
+#intro p strong.we-believe {  width: 100% !important; font-size: 62px; line-height: 63px; margin-bottom: 10px;  }
+#intro p strong.we-believe span { display: inline;}
+
+#intro img { width: 250px; margin: -2em 0 0 1%; border-radius: 150px;}
+
+
+#the-space { background-position: 0 180px; background-size: 100% auto; background-repeat: no-repeat; background-color: #000; background-attachment: scroll; }
+#the-space section p { background-image: none; width: 72%; }
 
 .interest-form button {float: left; margin: 15px 0 0 0;}
+
+#contact #bios { padding-top: 15px;}
+#contact #bios img { width: 80px; height: 80px; border-radius: 50%; float: left; margin: 0 0.6em 1em 0; }
+#contact #bios h3 { font-size: 24px; padding: 0.5em 0 0; line-height: 24px;}
+#contact #bios p { margin: 0;}
+#contact #bios section { clear: left; float: none; display: block; width: 100%;  text-align: left;}
+#contact #bios .email { font-size: 28px; margin-left: 0; }
+
 
 /* end media query */}
 
@@ -218,8 +251,9 @@ header.header {background: #09070a url(../images/lights-blur.jpg) fixed no-repea
 
 #how-it-works { background: #fff;}
 #how-it-works,
-#emailform { padding: 10% 10% 20% 10%; }
+#emailform { padding: 10% 10% 10% 10%; }
 #the-space { background: #c91604 url(../images/wip-blur.jpg) fixed repeat 30% 50%;}
+#intro h2 { font-size: ;}
 
 .interest-form button {float: left; margin: 15px 0 0 0;}
 
