@@ -25,20 +25,29 @@ header.header p:before { content: "because ";}
 #intro img { width: 300px; margin: 0 7%; float: right; border-radius: 150px;}
 
 
+
 #how-it-works ul, #how-it-works ol, #how-it-works li { margin: 0; padding: 0; list-style: none; }
 #how-it-works ul li { display: inline-block; vertical-align: top; width: 23%; text-align: center; background: #ececec; -webkit-transition: 0.8s all ease-out; }
-#how-it-works ul li:hover { box-shadow: 0 0 6px rgba(0,0,0,0.3); -webkit-transition: 0.15s all ease-out; }
-#how-it-works ul li:hover li:hover { box-shadow: none; }
+#how-it-works ul li:hover { box-shadow: 0 0 6px rgba(0,0,0,0.35); -webkit-transition: 0.15s all ease-out; -webkit-transform: scale(1.06);  }
+#how-it-works ul li:hover li:hover { box-shadow: none; -webkit-transform: scale(1); }
 #how-it-works .membership-day-pass { margin-right: 4%; }
-#how-it-works ol li { display: block; width: 100%; margin-right: 0; border: none; border-top: 1px dotted #efefef; padding: 0.3em 0; font-size: 0.9em; line-height: 1.3em;}
-#how-it-works ul h3 { font-family: "din-condensed-web", sans-serif; font-weight: 200; text-transform: uppercase; letter-spacing: -0.06em; padding: 0.25em 0; background: #4b4c4b; color: #fff; font-size: 28px; }
+#how-it-works .membership-day-pass .apply, #how-it-works ul li.membership-full-time .apply { padding-top: 50px;}
+#how-it-works ol li { display: block; width: 100%; margin-right: 0; border: none; padding: 0.3em 0; font-size: 0.9em; line-height: 1.3em;}
+#how-it-works ul h3 { font-family: "din-condensed-web", sans-serif; font-weight: 200; text-transform: uppercase; letter-spacing: -0.06em; padding: 0.25em 0; background: #7b7b7a; color: #fff; font-size: 28px; }
+#how-it-works ul li.membership-day-pass:hover .apply a { background-color: #5b5b5a;}
+
 #how-it-works ul li.membership-occasional h3 { background: #2b7399; }
+#how-it-works ul li.membership-occasional:hover .apply a { background-color: #2b7399;}
 #how-it-works ul li.membership-part-time h3 { background: #b42863; }
+#how-it-works ul li.membership-part-time:hover .apply a { background-color: #b42863;}
 #how-it-works ul li.membership-full-time h3 { background: #80992b; }
+#how-it-works ul li.membership-full-time:hover .apply a { background-color: #80992b;}
+
 #how-it-works ul li.membership-price { font-family: "din-condensed-web", sans-serif; font-weight: 200; text-transform: uppercase; letter-spacing: -0.06em; font-size: 24px; line-height: 42px; }
 #how-it-works ul li.apply { padding: 0.8em 0 0.7em; }
 
-#how-it-works ol li a { background: #4a4a4c; color: #ffac0e; border-radius: 4px; font-family: "din-condensed-web", sans-serif; font-weight: 200; font-size: 1.05em; text-transform: uppercase; letter-spacing: -0.04em; text-decoration: none;font-style: normal; padding: 4px 6px; }
+#how-it-works ol li a { background: #8c8c8b; color: #fff; border-radius: 6px; font-family: "din-condensed-web", sans-serif; font-weight: 200; font-size: 1.05em; text-transform: uppercase; letter-spacing: -0.04em; text-decoration: none;font-style: normal; padding: 3px 15px; -webkit-transition: 0.8s all ease-in; }
+#how-it-works ul li ol li.apply a:hover { background: #ffac0e; -webkit-transform: scale(1.1); -webkit-transition: 0.15s all ease-out; }
 
 
 
@@ -105,7 +114,7 @@ nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 #the-space header p {background: rgb(191,21,4); color: #fff; font-size: 0.8em; overflow: auto; padding: 0.5em 1em; margin: 0;}
 #the-space header span.date {margin-left: 1em;}
 #the-space header .musicsources {float: right;}
-#the-space section p { background: rgba(0,0,0,0.77) url(../images/iconfade.png) fixed top center; color: #fff; width: 32%; min-width: 300px; float: left; clear: left; padding: 15px 4.5% 15px 7%; margin: 0; }
+#the-space section p { background: rgba(0,0,0,0.77) url(../images/iconfade.png) fixed top center; color: #fff; width: 42%; min-width: 300px; float: left; clear: left; padding: 15px 4.5% 15px 7%; margin: 0; }
 #the-space section p:last-child { padding-bottom: 64px; }
 #the-space section p.first { padding-top: 64px; } /* I know, I know, this is a dirty hack. Please fix me. */
 #the-space a { color: #fff; }
