@@ -174,16 +174,19 @@ body { overflow-x: hidden;}
 section p, section li { font-size: 19px; line-height: 1.25em; }
 
 
-header.header { padding: 50px 10px;}
+header.header { padding: 50px 10px 20px 10px;}
 header.header h1 {width: 100%; height: 62px; margin:0;  background-position: 50% 50%; background-size: contain; }
-header.header p { font-size: 47px; line-height: 1.2em;}
+header.header p { font-size: 35px; line-height: 1.1em; padding: 0 0.6em; text-align: center; margin: 0;}
 
 
 
-#intro, #the-space, #how-it-works,#the-neighbourhood { padding: 10% 10% 15% 10%; }
+#intro, #the-space, #how-it-works,#the-neighbourhood { padding: 5% 7% 15% 7%; }
 
-#intro h2, #the-space h2, #how-it-works h2, #whos-here h2, #contact h2, #the-neighbourhood h2 { font-family: "din-condensed-web", "Arial Narrow", sans-serif; text-align: center; text-transform: uppercase; font-weight: 200; font-size: 39px; letter-spacing: -0.02em; }
+#intro h2, #the-space h2, #how-it-works h2, #whos-here h2, #contact h2, #the-neighbourhood h2 { font-family: "din-condensed-web", "Arial Narrow", sans-serif; text-align: center; text-transform: uppercase; font-weight: 200; font-size: 43px; line-height: 1.05em; letter-spacing: -0.02em; }
+
 #intro img  { width: 100%; height: auto; overflow: hidden; border-radius: 0; margin: 0.5em 0; }
+#intro p.first { font-size: 26px; line-height: 1.1em; padding: 0; text-align: center;}
+#intro p.first strong { font-weight: 200; }
 
 #the-space { background: #fff; color: #000; }
 #the-space h2 { color: #c91604;}
@@ -191,7 +194,7 @@ header.header p { font-size: 47px; line-height: 1.2em;}
 
 #how-it-works h2 { color: #ffac0e; }
 #how-it-works a { color: #c91604; }
-#how-it-works ul li { display: block; width: 100%; margin: 0.7em 0; }
+#how-it-works ul li { display: block; width: 100%; margin: 0.7em 0 2em 0; }
 #how-it-works ul li li { margin: 0;}
 #how-it-works ol li { padding: 1px 0;}
 #how-it-works ul li.membership-price { line-height: 25px; }
