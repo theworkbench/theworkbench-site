@@ -22,7 +22,7 @@ header.header p:before { content: "because ";}
 #intro p { text-align: left; }
 #intro a { color: #fff;  }
 #intro a:hover { color: #fca60e; text-decoration: none;}
-#intro img { width: 300px; margin: 0 7%; float: right; border-radius: 150px;}
+#intro img { border-radius: 150px; float: right; height: 300px; margin: 0 7%; width: 300px;}
 
 
 
