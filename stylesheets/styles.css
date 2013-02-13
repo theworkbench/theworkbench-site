@@ -13,12 +13,12 @@ section, section p, section li { font: 21px/1.25em "chaparral-pro", georgia, ser
 
 header.header { background: #000; color: #fff; border-bottom: 3px solid #fff; }
 header.header h1 {margin: 0 0 0 -2px; padding: 0; background: url(../images/logo.svg) scroll no-repeat 0 0; width: 618px; height: 88px; text-indent: -1000em; overflow: hidden;}
-header.header p {width: auto; text-align: left; font-family: "chaparral-pro", georgia, serif; font-weight: 200; font-size: 117px; line-height: 104px; text-transform: lowercase; letter-spacing: -0.055em; color: #fff; text-shadow: none; margin: 2% 0 8% 0.5%; text-rendering: optimizeLegibility; }
+header.header p {width: auto; text-align: left; font-family: "chaparral-pro", georgia, serif; font-weight: 200; font-size: 101px; line-height: 95px; text-transform: lowercase; letter-spacing: -0.055em; color: #fff; text-shadow: none; margin: 2% 0 8% 0.5%; text-rendering: optimizeLegibility; }
 header.header p:before { content: "because ";}
 
 
 
-#intro { padding: 10% 40% 20% 7%; background: #c91604; color: #fff; }
+#intro { padding: 10% 40% 20% 7%;  }
 #intro p { text-align: left; }
 #intro a { color: #fff;  }
 #intro a:hover { color: #fca60e; text-decoration: none;}
@@ -123,7 +123,7 @@ nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 	#the-neighbourhood #map {float: left; height: 600px; margin: 3.4% 2% 0 2%; position: relative; width: 40%;}
 	#the-neighbourhood #hood-talk {background: rgba(255,255,255,0.8); color: #111; float: right; margin-right: 0; padding: 3% 6% 3% 2%; width: 32%;}
 	#the-neighbourhood iframe {height: 600px; width: 100%;}
-#the-neighbourhood h2 {  font-weight: 200; font-size: 87px; line-height: 74px; color: #212121; display: block; margin-bottom: 45px; letter-spacing: -0.03em; width: 100% !important;  }
+#the-neighbourhood h2 {  font-weight: 200; font-size: 81px; line-height: 74px; color: #212121; display: block; margin-bottom: 19px; letter-spacing: -0.03em; width: 100% !important;  }
 #the-neighbourhood h2 span { font-family: "din-condensed-web", "Arial Narrow", sans-serif; text-transform: uppercase; letter-spacing: -0.07em; color: #ffac0e; display: block; }
 #the-neighbourhood a { color: #000;}
 #the-neighbourhood a:hover { color: #ffac0e; }
@@ -174,9 +174,9 @@ body { overflow-x: hidden;}
 section p, section li { font-size: 19px; line-height: 1.25em; }
 
 
-header.header { padding: 50px 10px 20px 10px;}
+header.header { padding: 50px 10px 20px 10px; background: #000 url(../images/foursquare-mobile2.jpg) scroll no-repeat 50% 0; background-size: 100% auto; color: #000; padding-top: 115px;}
 header.header h1 {width: 100%; height: 62px; margin:0;  background-position: 50% 50%; background-size: contain; }
-header.header p { font-size: 35px; line-height: 1.1em; padding: 0 0.6em; text-align: center; margin: 0;}
+header.header p { font-size: 35px; line-height: 1.1em; padding: 0 0.6em; text-align: center; margin: -10px 0 0 0;}
 
 
 
@@ -184,13 +184,17 @@ header.header p { font-size: 35px; line-height: 1.1em; padding: 0 0.6em; text-al
 
 #intro h2, #the-space h2, #how-it-works h2, #whos-here h2, #contact h2, #the-neighbourhood h2 { font-family: "din-condensed-web", "Arial Narrow", sans-serif; text-align: center; text-transform: uppercase; font-weight: 200; font-size: 43px; line-height: 1.05em; letter-spacing: -0.02em; }
 
-#intro img  { width: 100%; height: auto; overflow: hidden; border-radius: 0; margin: 0.5em 0; }
-#intro p.first { font-size: 26px; line-height: 1.1em; padding: 0; text-align: center;}
+#intro { padding-bottom: 5%; }
+#intro a { color: #000; }
+#intro img  { width: 115px; height: auto; float: right;  overflow: hidden; margin: 0.5em -18px 0.5em 2px; }
+#intro p.first { font-size: 28px; line-height: 1.1em; padding: 0; text-align: left;}
 #intro p.first strong { font-weight: 200; }
 
-#the-space { background: #fff; color: #000; }
-#the-space h2 { color: #c91604;}
+#the-space { background: #fff url(../images/standing-mobile.jpg) scroll no-repeat 50% 0; background-size: 100% auto; color: #000; padding-top: 180px; }
+#the-space h2 { color: #C91604; }
 #the-space a, #the-neighbourhood a { color: #c91604; }
+
+
 
 #how-it-works h2 { color: #ffac0e; }
 #how-it-works a { color: #c91604; }
@@ -200,7 +204,9 @@ header.header p { font-size: 35px; line-height: 1.1em; padding: 0 0.6em; text-al
 #how-it-works ul li.membership-price { line-height: 25px; }
 
 
+
 #the-neighbourhood map, #the-neighbourhood iframe { display: none; }
+
 
 
 #contact #bios img { width: 60px; height: 60px; border-radius: 50%; float: left; margin: 0 0.6em 1em -20px; }
