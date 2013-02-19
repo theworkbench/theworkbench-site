@@ -26,16 +26,16 @@ header.header p:before { content: "because ";}
 #how-it-works .membership-day-pass { margin-right: 4%; }
 #how-it-works .membership-day-pass .apply, #how-it-works ul li.membership-full-time .apply { padding-top: 50px;}
 #how-it-works ol li { display: block; width: 100%; margin-right: 0; border: none; padding: 0.3em 0; font-size: 0.9em; line-height: 1.3em;}
-#how-it-works ul h3 { font-family: "din-condensed-web", "Arial Narrow", "Segoe WP", sans-serif; font-weight: 200; text-transform: uppercase; letter-spacing: -0.06em; padding: 0.25em 0; background: #7b7b7a; color: #fff; font-size: 28px; }
+#how-it-works ul h3 { font-family: "din-condensed-web", "Arial Narrow", "Times New Roman", sans-serif; font-weight: 200; text-transform: uppercase; letter-spacing: -0.06em; padding: 0.25em 0; background: #7b7b7a; color: #fff; font-size: 28px; }
 
 #how-it-works ul li.membership-occasional h3 { background: #2b7399; }
 #how-it-works ul li.membership-part-time h3 { background: #b42863; }
 #how-it-works ul li.membership-full-time h3 { background: #80992b; }
 
-#how-it-works ul li.membership-price { font-family: "din-condensed-web", "Arial Narrow", "Segoe WP", sans-serif; font-weight: 200; text-transform: uppercase; letter-spacing: -0.06em; font-size: 24px; line-height: 42px; }
+#how-it-works ul li.membership-price { font-family: "din-condensed-web", "Arial Narrow", "Times New Roman", sans-serif; font-weight: 200; text-transform: uppercase; letter-spacing: -0.06em; font-size: 24px; line-height: 42px; }
 #how-it-works ul li.apply { padding: 0.8em 0 0.7em; }
 
-#how-it-works ol li a { background: #8c8c8b; color: #fff; border-radius: 6px; font-family: "din-condensed-web", "Arial Narrow", "Segoe WP", sans-serif; font-weight: 200; font-size: 1.05em; text-transform: uppercase; letter-spacing: -0.04em; text-decoration: none;font-style: normal; padding: 3px 15px; -webkit-transition: 0.8s all ease-in; }
+#how-it-works ol li a { background: #8c8c8b; color: #fff; border-radius: 6px; font-family: "din-condensed-web", "Arial Narrow", "Times New Roman", sans-serif; font-weight: 200; font-size: 1.05em; text-transform: uppercase; letter-spacing: -0.04em; text-decoration: none;font-style: normal; padding: 3px 15px; -webkit-transition: 0.8s all ease-in; }
 
 
 
@@ -58,7 +58,7 @@ form label { display: inline; }
 form input.text {background-color: #000; border-radius: 2px; border: none; font: 19px/1.3em "chaparral-pro", georgia, serif; color: #fff; margin: 0 0 10px 5px; padding: 2px 5px;  }
 ::-webkit-input-placeholder { color: rgba(255,255,255,0.65); font-style: italic;}
 :-moz-placeholder { color: rgba(255,255,255,0.65); font-style: italic;}
-form button { text-transform: uppercase; font-weight: 400; font: 19px/22px "din-condensed-web", "Arial Narrow", "Segoe WP", sans-serif; color: #222; background: #fff; border: none; padding: 5px 10px; margin: 4px 0;  }
+form button { text-transform: uppercase; font-weight: 400; font: 19px/22px "din-condensed-web", "Arial Narrow", "Times New Roman", sans-serif; color: #222; background: #fff; border: none; padding: 5px 10px; margin: 4px 0;  }
 form button:hover { background: #ffac0e;}
 form button:active { background: #ffac0e;}
 
@@ -81,7 +81,7 @@ header.header { padding: 18% 40% 2% 7%; background: #09070a url(../images/foursq
 
 nav { position: fixed; top: 0; right: 6%; }
 nav ul, nav li { list-style: none; margin: 0; padding: 0; display: inline;}
-nav li a { display: inline-block; background: rgba(0,0,0,0.45); color: #fff; padding: 18px 10px 5px; margin: 0; font-family: "din-condensed-web", "Arial Narrow", "Segoe WP", sans-serif; font-weight: 200; font-style: normal; text-transform: uppercase; text-decoration: none; -webkit-transition: all 0.3s ease-in; }
+nav li a { display: inline-block; background: rgba(0,0,0,0.45); color: #fff; padding: 18px 10px 5px; margin: 0; font-family: "din-condensed-web", "Arial Narrow", "Times New Roman", sans-serif; font-weight: 200; font-style: normal; text-transform: uppercase; text-decoration: none; -webkit-transition: all 0.3s ease-in; }
 nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 
 #the-space { background: #c91604 url(../images/standing.jpg) fixed repeat 50% 5%; background-size: cover; padding: 0 0 180px 0; overflow-x: hidden; }
@@ -107,7 +107,7 @@ nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 #the-neighbourhood a:hover { color: #ffac0e; }
 
 #how-it-works { background: #fff url(../images/nametag.svg) scroll no-repeat -7% 10%; background-size: 33%;  color: #222; clear: right; padding: 5% 8% 7% 32%; }
-#how-it-works h2 { color: #ffac0e; font-family: "din-condensed-web", "Arial Narrow", "Segoe WP", sans-serif; font-weight: 200; font-size: 117px; line-height: 0.8; text-transform: uppercase; letter-spacing: -0.06em;}
+#how-it-works h2 { color: #ffac0e; font-family: "din-condensed-web", "Arial Narrow", "Times New Roman", sans-serif; font-weight: 200; font-size: 117px; line-height: 0.8; text-transform: uppercase; letter-spacing: -0.06em;}
 #how-it-works a { color: #bf1504; }
 #how-it-works ul li:hover { box-shadow: 0 0 6px rgba(0,0,0,0.35); -webkit-transition: 0.15s all ease-out; -webkit-transform: scale(1.06);  }
 #how-it-works ul li:hover li:hover { box-shadow: none; -webkit-transform: scale(1); }
@@ -170,7 +170,7 @@ header.header p { font-size: 35px; line-height: 1.1em; padding: 0 7%; text-align
 
 #intro, #the-space, #how-it-works,#the-neighbourhood, .colophon { padding: 5% 7% 15% 7%; }
 
-#intro h2, #the-space h2, #how-it-works h2, #whos-here h2, #contact h2, #the-neighbourhood h2 { font-family: "din-condensed-web", "Arial Narrow", "Segoe WP", sans-serif; text-transform: uppercase; font-weight: 200; font-size: 43px; line-height: 1.05em; letter-spacing: -0.02em; }
+#intro h2, #the-space h2, #how-it-works h2, #whos-here h2, #contact h2, #the-neighbourhood h2 { font-family: "din-condensed-web", "Arial Narrow", "Times New Roman", sans-serif; text-transform: uppercase; font-weight: 200; font-size: 43px; line-height: 1.05em; letter-spacing: -0.02em; }
 
 #intro { padding-bottom: 5%; }
 #intro a { color: #000; }
