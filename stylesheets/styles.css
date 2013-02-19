@@ -1,31 +1,42 @@
-
 h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
 
 p { margin: 0.85em 0; padding: 0; }
 
 body { margin: 0; padding: 0; background: #fff; color: #000; }
 
-section p, section li { font: 21px/1.25em "chaparral-pro", georgia, serif; }
-
-a { font-style: italic; }
+section, section p, section li { font: 21px/1.25em "chaparral-pro", georgia, serif; }
 
 .clear {clear: both;}
 
+header.header { background: #000; color: #fff; border-bottom: 3px solid #fff; }
+header.header h1 {margin: 0 0 0 -2px; padding: 0; background: url(../images/logo.svg) scroll no-repeat 0 0; width: 618px; height: 88px; text-indent: -1000em; overflow: hidden;}
+header.header p {width: auto; text-align: left; font-family: "chaparral-pro", georgia, serif; font-weight: 200; font-size: 101px; line-height: 95px; text-transform: lowercase; letter-spacing: -0.055em; color: #fff; text-shadow: none; margin: 2% 0 8% 0.5%; text-rendering: optimizeLegibility; }
+header.header p:before { content: "because ";}
 
 
-header { background: #000; color: #fff; border-bottom: 3px solid #fff; }
-header h1 {margin: 0 0 0 -2px; padding: 0; background: url(../images/logo.png) scroll no-repeat 0 0; width: 591px; height: 85px; text-indent: -1000em; overflow: hidden;}
-header p { margin: 0;  font-family: "din-condensed-web", sans-serif; font-size: 21px; text-transform: uppercase; color:#fca60e; }
-
-#intro { padding: 10% 40% 20% 7%; background: #c91604; color: #fff; border-bottom: 3px solid #fff; }
+#intro { padding: 10% 40% 20% 7%;  }
 #intro p { text-align: left; }
 #intro a { color: #fff;  }
 #intro a:hover { color: #fca60e; text-decoration: none;}
+#intro img { height: 300px; width: 300px; margin: 0 7%; float: right; border-radius: 150px;}
 
-#how-it-works ul { margin: 0 auto; padding: 0; list-style: none; }
-#membership-details h3 { font-weight: normal; font-family:  "din-condensed-web", sans-serif; font-size: 21px; text-transform: uppercase; color:#fca60e; margin-bottom: 0; padding-bottom: 0; }
-#membership-details ul h3 em { font-style: normal; font-size: 42px; display: block; }
-#membership-details #additional-days h3 { font-size: 30px; display: block; }
+
+#how-it-works ul, #how-it-works ol, #how-it-works li { margin: 0; padding: 0; list-style: none; }
+#how-it-works ul li { display: inline-block; vertical-align: top; width: 23%; text-align: center; background: #ececec; -webkit-transition: 0.8s all ease-out; }
+#how-it-works .membership-day-pass { margin-right: 4%; }
+#how-it-works .membership-day-pass .apply, #how-it-works ul li.membership-full-time .apply { padding-top: 50px;}
+#how-it-works ol li { display: block; width: 100%; margin-right: 0; border: none; padding: 0.3em 0; font-size: 0.9em; line-height: 1.3em;}
+#how-it-works ul h3 { font-family: "din-condensed-web", "Arial Narrow", "Segoe WP", sans-serif; font-weight: 200; text-transform: uppercase; letter-spacing: -0.06em; padding: 0.25em 0; background: #7b7b7a; color: #fff; font-size: 28px; }
+
+#how-it-works ul li.membership-occasional h3 { background: #2b7399; }
+#how-it-works ul li.membership-part-time h3 { background: #b42863; }
+#how-it-works ul li.membership-full-time h3 { background: #80992b; }
+
+#how-it-works ul li.membership-price { font-family: "din-condensed-web", "Arial Narrow", "Segoe WP", sans-serif; font-weight: 200; text-transform: uppercase; letter-spacing: -0.06em; font-size: 24px; line-height: 42px; }
+#how-it-works ul li.apply { padding: 0.8em 0 0.7em; }
+
+#how-it-works ol li a { background: #8c8c8b; color: #fff; border-radius: 6px; font-family: "din-condensed-web", "Arial Narrow", "Segoe WP", sans-serif; font-weight: 200; font-size: 1.05em; text-transform: uppercase; letter-spacing: -0.04em; text-decoration: none;font-style: normal; padding: 3px 15px; -webkit-transition: 0.8s all ease-in; }
+
 
 
 #whos-here ul { margin: 0; padding: 0; list-style: none; }
@@ -34,125 +45,178 @@ header p { margin: 0;  font-family: "din-condensed-web", sans-serif; font-size: 
 #whos-here a img { width: 82px; height: 82px; border: none; border-radius: 41px; margin: 0 9px; background: #444; }
 #whos-here a:hover { opacity: 1; -webkit-transition: 0.1s all ease-out; }
 
-#emailform { background: #141c1f; color: #fff; padding: 80px 40px;  }
+#contact { background: #141c1f; color: #fff; padding: 80px 40px;  }
+#contact h2, #contact a { color: #fff;}
 
-#emailform h2 {color: #ffac0e; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 69px; line-height: 0.8; text-transform: uppercase; letter-spacing: -0.06em;  }
+.colophon { padding: 25px 40px 15px 40px; color: #777; background-color: #000; }
+.colophon h3 { margin: 0; font-size: 0.7em;}
+.colophon p { font-size: 0.7em; margin: 0; }
+.colophon a { color: #777;}
 
 
 form label { display: inline; }
 form input.text {background-color: #000; border-radius: 2px; border: none; font: 19px/1.3em "chaparral-pro", georgia, serif; color: #fff; margin: 0 0 10px 5px; padding: 2px 5px;  }
 ::-webkit-input-placeholder { color: rgba(255,255,255,0.65); font-style: italic;}
 :-moz-placeholder { color: rgba(255,255,255,0.65); font-style: italic;}
-form button { text-transform: uppercase; font-weight: 400; font: 19px/22px "din-condensed-web", sans-serif; color: #222; background: #fff; border: none; padding: 5px 10px; margin: 4px 0;  }
+form button { text-transform: uppercase; font-weight: 400; font: 19px/22px "din-condensed-web", "Arial Narrow", "Segoe WP", sans-serif; color: #222; background: #fff; border: none; padding: 5px 10px; margin: 4px 0;  }
 form button:hover { background: #ffac0e;}
 form button:active { background: #ffac0e;}
-
-
-.interest-form { background: #030303 url(../images/iconfade.png) fixed bottom center; border: 5px solid #FFAC0E; border-radius: 15px; color: #fff; float: left; padding: 80px 40px;}
-	.interest-form form {margin: 0; padding: 0;}
-	.interest-form h2 {color: #ffac0e; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 69px; line-height: 0.8; margin: 0; text-transform: uppercase; letter-spacing: -0.06em;  }
-	.interest-form label {clear: both; display: block; margin: 0 0 20px 0;}
-	.interest-form span {display: block; float: left; width: 50px;}
-	.interest-form .checkbox span {float: left; margin-left: 5px; width: auto;}
-	.interest-form .checkbox input {float: left; margin-left: 54px;}
-	.interest-form form input.text {background-color: #fff; border-radius: 2px; border: none; float: left; font: 19px/1.3em "chaparral-pro", georgia, serif; color: #000; margin: 0 0 10px 5px; padding: 2px 5px; }
-	.interest-form form button {clear: both; margin: 15px 0 0 54px;}
-
-/* colorbox */
-#colorbox {width: 50%;}
-#cboxClose {background: #030303; color: #fff; cursor: pointer; position: absolute; right: 1em; top: 1em;}
-#cboxOverlay {background: #030303; cursor: pointer; height: 100%; left: 0; position: fixed; top: 0; width: 100%;}
-
 
 /* Desktop version */
 
 @media screen and (min-width: 641px) {
 
-header { padding: 3% 40% 2% 7%; background: #09070a url(../images/lights-blur.jpg) fixed no-repeat 100% 0%; border-bottom: 0 none; }
-header p {width: 567px; text-align: right;}
-#intro {  padding: 4% 40% 8% 7%; background: #09070a url(../images/lights-blur.jpg) fixed no-repeat 100% 0%;  }
-#intro p { max-width: 450px;}
-#intro p em,
-#the-space p em {display: block; font-size: 65%; font-style: normal;}
+header.header { padding: 18% 40% 2% 7%; background: #09070a url(../images/foursquare-blur.jpg) fixed no-repeat 100% 0%; background-size:cover; border-bottom: 0 none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/foursquare-blur.jpg', sizingMethod='scale')"; }
+/* header p {width: 567px; text-align: right;} */
 
-#the-space { background: #c91604 url(../images/wip-blur.jpg) fixed repeat 50% 50%; background-size: cover; padding: 0 0 180px 0; overflow-x: hidden; }
-#the-space h2 { background: rgba(191,21,4,0.7) url(../images/iconfade.png) fixed top center; color: #fff; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 127px; line-height: 74px; text-transform: uppercase; letter-spacing: -0.07em; padding: 32px 0 0 15px; margin-bottom: 140px; }
+
+#intro {  padding: 4% 5% 3% 7.5%; background: url(../images/white85trans.png), url(../images/iconfade.png); background-attachment: fixed; background-position: top center; color: #121212; }
+#intro a { color: #000;}
+#intro p { max-width: 520px;}
+#intro p.first { max-width: 70%;}
+#intro p strong.we-believe {  font-weight: 200; font-size: 77px; line-height: 78px; color: #212121; display: block; margin-bottom: 45px; letter-spacing: -0.03em; width: 100% !important;  }
+#intro p strong.we-believe span { display: block;}
+
+
+nav { position: fixed; top: 0; right: 6%; }
+nav ul, nav li { list-style: none; margin: 0; padding: 0; display: inline;}
+nav li a { display: inline-block; background: rgba(0,0,0,0.45); color: #fff; padding: 18px 10px 5px; margin: 0; font-family: "din-condensed-web", "Arial Narrow", "Segoe WP", sans-serif; font-weight: 200; font-style: normal; text-transform: uppercase; text-decoration: none; -webkit-transition: all 0.3s ease-in; }
+nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
+
+#the-space { background: #c91604 url(../images/standing.jpg) fixed repeat 50% 5%; background-size: cover; padding: 0 0 180px 0; overflow-x: hidden; }
+#the-space header {background: rgba(191,21,4,0.7) url(../images/iconfade.png) fixed top center; color: #fff; margin-bottom: 140px;}
+#the-space h2 {font-family: "din-condensed-web", "Arial Narrow", "Segoe WP", sans-serif; font-weight: 200; font-size: 127px; line-height: 74px; padding: 32px 0 0 15px; text-transform: uppercase; letter-spacing: -0.07em; }
 #the-space h2 span { font-size: 38px; letter-spacing: normal; margin-right: -10px; position: relative; top: -62px; border-bottom: 5px solid #fff; }
-#the-space p { background: rgba(0,0,0,0.77) url(../images/iconfade.png) fixed top center; color: #fff; width: 25%; min-width: 300px; /*position: relative; right: -68%;*/ float: left; clear: left; padding: 15px 4.5% 15px 7%; margin: 0; }
-#the-space p:last-child { padding-bottom: 64px; }
-#the-space p.first { padding-top: 64px; } /* I know, I know, this is a dirty hack. Please fix me. */
+#the-space header p {background: rgb(191,21,4); color: #fff; font-size: 0.8em; overflow: auto; padding: 0.5em 1em; margin: 0;}
+#the-space header span.date {margin-left: 1em;}
+#the-space header .musicsources {float: right;}
+#the-space section p { background: rgba(0,0,0,0.77) url(../images/iconfade.png) fixed top center; color: #fff; width: 42%; min-width: 300px; float: left; clear: left; padding: 15px 4.5% 15px 7%; margin: 0; }
+#the-space section p:last-child { padding-bottom: 64px; }
+#the-space section p.first { padding-top: 64px; } /* I know, I know, this is a dirty hack. Please fix me. */
 #the-space a { color: #fff; }
 
-#how-it-works { background: #fff url(../images/nametag.svg) scroll no-repeat -7% 10%; background-size: 33%;  color: #222; clear: right; padding: 5% 8% 7% 32%; }
-#how-it-works h2 { color: #ffac0e; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 117px; line-height: 0.8; text-transform: uppercase; letter-spacing: -0.06em;}
-#how-it-works a { color: #bf1504; }
+#the-neighbourhood {background: #fff url(../images/mapimage-1.png) fixed repeat 50% 50%; overflow: auto; padding: 6% 0 11% 0;}
+	#the-neighbourhood #map {float: left; height: 600px; margin: 3.4% 2% 0 2%; position: relative; width: 40%;}
+	#the-neighbourhood #hood-talk {background: rgba(255,255,255,0.8); color: #111; float: right; margin-right: 0; padding: 3% 6% 3% 2%; width: 32%;}
+	#the-neighbourhood #map div { height: 600px; width: 550px;}
+	#the-neighbourhood #map div div {width: auto; height: auto;}
+#the-neighbourhood h2 {  font-weight: 200; font-size: 81px; line-height: 74px; color: #212121; display: block; margin-bottom: 19px; letter-spacing: -0.03em; width: 100% !important;  }
+#the-neighbourhood h2 span { font-family: "din-condensed-web", "Arial Narrow", "Segoe WP", sans-serif; text-transform: uppercase; letter-spacing: -0.07em; color: #ffac0e; display: block; }
+#the-neighbourhood a { color: #000;}
+#the-neighbourhood a:hover { color: #ffac0e; }
 
-#how-it-works #membership-details { margin: 35px 0 20px 0; background: rgba(255,255,255,0.75); }
-#how-it-works #membership-details li { width: 30%; display: table-cell; border-right: 1px dotted #dcdcdc; padding: 15px 2% 10px 2%; -webkit-transition: all 0.3s ease-in; }
-#how-it-works #membership-details li:hover { background: #fffaf3;  -webkit-transition: all 0.3s ease-in; }
-#how-it-works #membership-details li:first-child { padding-left: 0; width: 28%;}
-#how-it-works #membership-details li:last-child { border-right: none; }
-#membership-details ul p, #additional-days p { font-size: 16px; line-height: 1.25em; margin: 0.4em 0; }
-#membership-details ul p.price { font-size: 22px; }
-#membership-details #additional-days { margin-top: -5em; border-top: 3px solid #fca60e; width: 61.8%; text-align: center; padding: 15px 2% 5px 2%; background: #fff; }
+#how-it-works { background: #fff url(../images/nametag.svg) scroll no-repeat -7% 10%; background-size: 33%;  color: #222; clear: right; padding: 5% 8% 7% 32%; }
+#how-it-works h2 { color: #ffac0e; font-family: "din-condensed-web", "Arial Narrow", "Segoe WP", sans-serif; font-weight: 200; font-size: 117px; line-height: 0.8; text-transform: uppercase; letter-spacing: -0.06em;}
+#how-it-works a { color: #bf1504; }
+#how-it-works ul li:hover { box-shadow: 0 0 6px rgba(0,0,0,0.35); -webkit-transition: 0.15s all ease-out; -webkit-transform: scale(1.06);  }
+#how-it-works ul li:hover li:hover { box-shadow: none; -webkit-transform: scale(1); }
+
+#how-it-works ul li.membership-day-pass:hover .apply a { background-color: #5b5b5a;}
+#how-it-works ul li.membership-occasional:hover .apply a { background-color: #2b7399;}
+#how-it-works ul li.membership-part-time:hover .apply a { background-color: #b42863;}
+#how-it-works ul li.membership-full-time:hover .apply a { background-color: #80992b;}
+#how-it-works ul li ol li.apply a:hover { background: #ffac0e; -webkit-transform: scale(1.1); -webkit-transition: 0.15s all ease-out; }
+
 
 #membership-details a.register-interest {background: #eaeaea; border-radius: 3px; color: #666; display: inline-block; font-style: normal; padding: 4px 7px; text-decoration: none; margin: 8px 0 0 0;  -webkit-transition: all 0.3s ease-in;}
 #membership-details li:hover a.register-interest { background: #fca60e; color: #fff; -webkit-transition: all 0.3s ease-in; }
 #membership-details li:hover a.register-interest:hover { background: #BF1504;  color: #fff; -webkit-transition: all 0.15s ease-in; }
 
-#whos-here { background: #141c1f; color: #fff; padding: 80px 40px; }
-#whos-here h2 { color: #ffac0e; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 99px; line-height: 82px; text-transform: uppercase; letter-spacing: -0.06em; width: 255px; float: left;  }
-#whos-here p, #whos-here ul { margin-left: 280px; }
-#whos-here h2:after { content: " \2192"; }
-#whos-here li a { color: #fff; }
-#whos-here li a img { -webkit-transition: 0.5s all ease-out; }
-#whos-here li a:hover img { box-shadow: 0 0 12px rgba(255,255,255,0.6); -webkit-transform: scale(1.1); -webkit-transition: 0.1s all ease-out; }
 
-#emailform { padding: 5% 30% 10% 400px; background: #141c1f url(../images/iconfade.png) fixed top center; }
-#emailform h2 {width: 255px; float: left; }
-#emailform  h2:after { content: " \2192"; }
+#contact { background: url(../images/black85trans.png), url(../images/mapimage-1.png); background-attachment: fixed; background-position: 50% 50%;}
+#contact h2 {font-family: "din-condensed-web", "Arial Narrow", "Segoe WP", sans-serif; font-weight: 200; font-size: 87px; line-height: 74px; padding: 32px 0 0 0; text-transform: uppercase; letter-spacing: -0.07em; }
+#contact .streetaddress { display: block; font-size: 32px; margin: 8px 0;}
+#contact .streetaddress a { font-style: normal; }
+#contact .open-hours { margin-bottom: 2.4em;}
 
-#emailform p, #emailform form { margin-left: 280px; margin-top: 0;}
+#contact #vitals { width: 55%; display: inline-block; vertical-align: top;}
+
+#contact #bios { width: 42%; display: inline-block;}
+
+#contact #bios section { display: inline-block; vertical-align: top; width: 22%; margin: 0 5%; text-align: center;}
+#contact #bios img { width: 120px; height: 120px; border-radius: 75px; -webkit-transition: 0.6s all ease-in; }
+#contact #bios a:hover img { opacity: 0.6; -webkit-transition: 0.1s all ease-out; }
+#contact #bios p { font-size: 0.8em; line-height: 1.3em;}
+#contact #bios h3 { font-weight: 200;  }
+#contact #bios .email { font-family: "chaparral-pro", georgia, serif; font-weight: 200; font-size: 52px; margin: 0.5em 0; text-align: center; }
+#contact #bios .email a { font-style: normal;}
+
+#emailform { margin-top: 2.4em;}
+#emailform p { font-size: 0.8em; }
+#emailform p, #emailform form { margin-top: 0;}
 
 }
 
+
+/* Telling IE10 to use the mobile version in snap view */
+@-ms-viewport { width: device-width; }
 
 /* Mobile version */
 
 @media screen and (max-width: 640px) {
 
-header { padding: 10px; 0;}
-header h1 {width: 100%; height: 62px; margin:0;  background-position: 50% 50%; background-size: contain; }
-header p { text-align: center;}
+#nav { display: none;}
 
-#intro, #the-space, #how-it-works, #whos-here { padding: 10% 10% 15% 10%; }
+body { overflow-x: hidden;}
 
-#intro h2, #the-space h2, #how-it-works h2, #whos-here h2, #emailform h2 { font-family: "din-condensed-web", "Arial Narrow", sans-serif; text-align: center; text-transform: uppercase; font-weight: 200; font-size: 39px; letter-spacing: -0.02em; }
+section p, section li { font-size: 19px; line-height: 1.25em; }
 
-#the-space { background: #fff; color: #000; }
-#the-space h2 { color: #c91604;}
-#the-space a { color: #c91604; }
+
+header.header { padding: 50px 0 20px 0; background: #000 url(../images/foursquare-mobile2.jpg) scroll no-repeat 50% 0; background-size: 100% auto; color: #000; padding-top: 115px;}
+header.header h1 {width: 92%; height: 62px; margin:0 0 0 7%;  background-position: 0 50%; background-size: 86% auto; }
+header.header p { font-size: 35px; line-height: 1.1em; padding: 0 7%; text-align: left; margin: -10px 0 0 0;}
+
+
+#intro, #the-space, #how-it-works,#the-neighbourhood, .colophon { padding: 5% 7% 15% 7%; }
+
+#intro h2, #the-space h2, #how-it-works h2, #whos-here h2, #contact h2, #the-neighbourhood h2 { font-family: "din-condensed-web", "Arial Narrow", "Segoe WP", sans-serif; text-transform: uppercase; font-weight: 200; font-size: 43px; line-height: 1.05em; letter-spacing: -0.02em; }
+
+#intro { padding-bottom: 5%; }
+#intro a { color: #000; }
+#intro img  { width: 115px; height: auto; float: right;  overflow: hidden; margin: 0.5em -18px 0.5em 2px; }
+#intro p.first { font-size: 28px; line-height: 1.1em; padding: 0; text-align: left;}
+#intro p.first strong { font-weight: 200; }
+
+#the-space { background: #fff url(../images/standing-mobile.jpg) scroll no-repeat 50% 0; background-size: 100% auto; color: #000; padding-top: 48%; }
+#the-space h2 { color: #C91604; }
+#the-space a, #the-neighbourhood a { color: #c91604; }
+
+#how-it-works { background: #fff url(../images/nametag-mobile.gif) scroll no-repeat 50% 0; background-size: 100% auto; padding-top: 29%;}
 
 #how-it-works h2 { color: #ffac0e; }
 #how-it-works a { color: #c91604; }
+#how-it-works ul li { display: block; text-align: left; width: 100%; margin: 0.7em 0 1.2em 0; padding-bottom: 0.3em; position: relative; }
+#how-it-works ul li li { margin: 0; position: static; display: inline; line-height: 25px; }
+#how-it-works ul li ol { padding-left: 10px; }
+#how-it-works ol li { padding: 1px 0;}
+#how-it-works ul li.membership-price { line-height: 25px; display: block; }
+#how-it-works ul li li.additionaldays:before { content: "\(";}
+#how-it-works ul li li.additionaldays:after { content: "\)";}
 
-#how-it-works #membership-details li {margin: 2em 0 2em 0; }
+#how-it-works ul li.apply { padding: 0; line-height: 1.35em;}
+#how-it-works li .apply a { position: absolute; top: 5px; right: 5px; background: #fff; color: #000; padding: 2px 10px; font-size: 1.3em; }
+#how-it-works .membership-day-pass .apply, #how-it-works ul li.membership-full-time .apply { padding-top: 0;}
+#how-it-works ul h3 { margin-bottom: 0.35em; padding-left: 10px;}
 
-#whos-here h2 { color: #c91604; }
-#whos-here ul { margin: 0 -8%; }
-#whos-here a { opacity: 1; }
+#the-neighbourhood { background: #fff url(../images/mapimage-mobile.gif) scroll no-repeat 50% 0; background-size: 100% auto; padding-top: 37%;}
+#the-neighbourhood #map, #the-neighbourhood #map-canvas { display: none; }
+#the-neighbourhood h2 {color: #ffac0e;}
+#the-neighbourhood h2 span { display: block;}
 
-#emailform h2 { margin: 0 0 20px 0; text-align: center;}
-form input#name, form input#vhhth-vhhth { margin: 0 0 10px 5px; padding: 2px 5px; width: 100%;}
+#contact { padding: 40px 7%;}
+#contact #bios img { width: 60px; height: 60px; border-radius: 50%; float: left; margin: 0 0.6em 1em -20px; }
+#contact #bios h3 { font-size: 21px; margin: 2.5em 0 0; line-height: 20px;}
+#contact #bios p { margin: 0;}
+#contact #bios section { clear: left; padding-left: 6%}
+#contact #bios p.email { clear: both; font-size: 24px; margin: 2em 0 0.5em 0; }
 
-#colorbox {width: 300px;}
-.interest-form {padding: 40px 10px;}
-	.interest-form h2 {font-size: 30px;}
-	.interest-form .checkbox span {width: 150px;}
-	.interest-form form input.text {font-size: 12px;}
-	.interest-form button {float: left; font-size: 12.5px; margin: 15px 0 0 0;}
 
-#cboxOverlay {height: 285em; position: absolute;}
+#emailform h3 { margin: 50px 0 0 0;}
+form input#name, form input#vhhth-vhhth { margin: 0 0 10px 0; border: 1px solid #444; padding: 2px 5px; width: 100%;}
+#emailform form { margin-bottom: 55px;}
+
+
 
 /* end media query */}
 
@@ -160,26 +224,88 @@ form input#name, form input#vhhth-vhhth { margin: 0 0 10px 5px; padding: 2px 5px
 /* portrait iPad */
 @media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait){
 
-#how-it-works { background: #fff;}
-#how-it-works,
-#emailform { padding: 10% 10% 20% 10%; }
 
-header {background: #09070a url(../images/lights-blur.jpg) fixed no-repeat 85% 0%;}
-#intro {background: #09070a url(../images/lights-blur.jpg) fixed no-repeat 85% 0%;}
-#the-space { background: #c91604 url(../images/wip-blur.jpg) fixed repeat 60% 50%;}
+#how-it-works { background: #fff; }
+#how-it-works { padding: 10% 10% 5% 10%; }
+#how-it-works .membership-day-pass .apply, #how-it-works ul li.membership-full-time .apply { padding-top: 73px;}
 
-.interest-form button {float: left; margin: 15px 0 0 0;}
+header.header { background-size: 106% auto; background-repeat: no-repeat; background-color: #232323; background-attachment: scroll; padding: 305px 8% 10px 8%; }
+header.header p { font-size: 86px; line-height: 72px; width: 100%; max-width: 100%; }
+
+#intro {background-position: 85% 0%; }
+#intro p.first { max-width: 90%;}
+#intro p strong.we-believe {  width: 100% !important; font-size: 62px; line-height: 63px; margin-bottom: 10px;  }
+#intro p strong.we-believe span { display: inline;}
+
+#intro img { width: 250px; margin: -2em 0 0 1%; border-radius: 150px;}
+
+#the-neighbourhood {  padding-bottom: 3%; background-position: 35% 0; background-repeat: no-repeat; background-color: #fff; background-attachment: scroll;}
+#the-neighbourhood #map {float: none; height: 300px; margin: 3.4% auto 0 auto; position: relative; width: 80%;}
+#the-neighbourhood #map div { height: 300px; width: 100%; }
+#the-neighbourhood #map div div {height: auto; width: auto;}
+#the-neighbourhood #hood-talk {background: rgba(255,255,255,0.8); color: #111; float: none; padding: 3% 2%; margin: 0 auto; width: 80%;}
+
+
+#the-space { background-position: 0 170px; background-position: 0 0; background-size: 100% auto; background-repeat: no-repeat; background-color: #000; background-attachment: scroll; padding-bottom: 0;}
+#the-space section p { background-image: none; width: 72%; }
+
+#the-space header {background: transparent none; margin-bottom: 0; padding-bottom: 0;}
+#the-space h2 {font-size: 197px; padding: 355px 18.5% 0 0; text-align: right; margin-bottom: 0; }
+#the-space h2 span { top: -110px; margin-right: -25px; margin-bottom: -100px;}
+#the-space header p { background: rgb(191,21,4); color: #fff; font-size: 0.8em; overflow: auto; padding: 0.5em 4.5% 0.5em 7%; margin: 0; width: 72%; text-indent: -0.6em; }
+#the-space section p { padding: 15px 3.5% 15px 8%; }
+#the-space section p.first { padding-top: 1.6em; }
+#the-space header p span.header { display: none;}
+#the-space header .musicsources {margin-right: -1.5em;}
+
+#contact #bios { padding-top: 15px;}
+#contact #bios img { width: 80px; height: 80px; border-radius: 50%; float: left; margin: 0 0.6em 1em 0; }
+#contact #bios h3 { font-size: 24px; padding: 0.5em 0 0; line-height: 24px;}
+#contact #bios p { margin: 0;}
+#contact #bios section { clear: left; float: none; display: block; width: 100%;  text-align: left;}
+#contact #bios .email { font-size: 28px; margin-left: 0; }
+
 
 /* end media query */}
 
 /* landscape iPad */
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape) {
 
-#how-it-works { background: #fff;}
-#how-it-works,
-#emailform { padding: 10% 10% 20% 10%; }
-#the-space { background: #c91604 url(../images/wip-blur.jpg) fixed repeat 30% 50%;}
 
-.interest-form button {float: left; margin: 15px 0 0 0;}
+header.header { background-size: 106% auto; background-repeat: no-repeat; background-color: #232323; background-attachment: scroll; padding: 275px 8% 10px 8%; }
+header.header p { font-size: 87px; line-height: 82px; padding-right: 15%; }
+
+#intro p.first { max-width: 85%;}
+
+#the-space { background-position: 0 170px; background-position: 0 0; background-size: 100% auto; background-repeat: no-repeat; background-color: #000; background-attachment: scroll; padding-bottom: 0;}
+#the-space section p { width: 75%; }
+
+
+
+#how-it-works { background: #fff;}
+#how-it-works { padding: 10% 10% 10% 10%; }
+
+
+#contact #bios { padding-top: 15px;}
+#contact #bios img { width: 100px; height: 100px; border-radius: 50%; float: left; margin: 0 0.6em 1em 0; }
+#contact #bios h3 { font-size: 25px; padding: 0.8em 0 0; line-height: 29px;}
+#contact #bios p { margin: 0;}
+#contact #bios section { clear: left; float: none; display: block; width: 100%;  text-align: left;}
+#contact #bios .email { font-size: 28px; margin-left: 0; clear: left; }
+
 
 /* end media query */}
+
+/* Hacking for IE 10 - the Surface tanks with fixed background images */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   header.header,
+   #intro,
+   #the-space,
+   #the-space header,
+   #the-space section p,
+   #the-neighbourhood,
+   #contact {background-attachment: scroll};
+
+}
+
+
