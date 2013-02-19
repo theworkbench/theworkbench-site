@@ -1,3 +1,4 @@
+/*
 $(document).ready(function(){
 	$("#register-basic").colorbox({
 		inline:true,
@@ -12,3 +13,4 @@ $(document).ready(function(){
 		transition: "elastic"
 	});
 });
+*/

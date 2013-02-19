@@ -60,6 +60,10 @@ header.header p:before { content: "because ";}
 #contact { background: #141c1f; color: #fff; padding: 80px 40px;  }
 #contact h2, #contact a { color: #fff;}
 
+.colophon { padding: 25px 40px 15px 40px; color: #777; background-color: #000; }
+.colophon h3 { margin: 0; font-size: 0.7em;}
+.colophon p { font-size: 0.7em; margin: 0; }
+.colophon a { color: #777;}
 
 
 form label { display: inline; }
@@ -180,7 +184,7 @@ header.header p { font-size: 35px; line-height: 1.1em; padding: 0 0.6em; text-al
 
 
 
-#intro, #the-space, #how-it-works,#the-neighbourhood { padding: 5% 7% 15% 7%; }
+#intro, #the-space, #how-it-works,#the-neighbourhood, .colophon { padding: 5% 7% 15% 7%; }
 
 #intro h2, #the-space h2, #how-it-works h2, #whos-here h2, #contact h2, #the-neighbourhood h2 { font-family: "din-condensed-web", "Arial Narrow", sans-serif; text-align: center; text-transform: uppercase; font-weight: 200; font-size: 43px; line-height: 1.05em; letter-spacing: -0.02em; }
 
@@ -206,15 +210,15 @@ header.header p { font-size: 35px; line-height: 1.1em; padding: 0 0.6em; text-al
 
 
 #the-neighbourhood map, #the-neighbourhood iframe { display: none; }
-
+#the-neighbourhood h2 {color: #ffac0e;}
+#the-neighbourhood h2 span { display: block;}
 
 
 #contact #bios img { width: 60px; height: 60px; border-radius: 50%; float: left; margin: 0 0.6em 1em -20px; }
 #contact #bios h3 { font-size: 21px; margin: 2em 0 0; line-height: 20px;}
 #contact #bios p { margin: 0;}
-#contact #bios section { clear: left;}
+#contact #bios section { clear: left; padding-left: 6%}
 #contact #bios p.email { clear: both; text-align: center; font-size: 24px; margin: 2em 0 0.5em 0; }
-
 
 
 #emailform h2 { margin: 0 0 20px 0; text-align: center;}
