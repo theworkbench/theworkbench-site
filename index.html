@@ -11,8 +11,39 @@
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<link href="stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0rx845px56mjjt30jizS7nlJNWK0FnSE&sensor=false"></script>
+    <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.1"></script>
+    <script type="text/javascript">
+      function initialize() {
+        var layer = "toner";
+        var mapOptions = {
+          center: new google.maps.LatLng(-33.880446,151.200478),
+          zoom: 17,
+          panControl: false,
+		  mapTypeControl: false,
+		  zoomControl: true,
+		  zoomControlOptions: {
+		    style: google.maps.ZoomControlStyle.SMALL
+		  },
+          mapTypeId: layer,
+		  mapTypeControlOptions: {
+	 	  }
+        };
+
+		
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            mapOptions);
+      var ctaLayer = new google.maps.KmlLayer('https://maps.google.com.au/maps/ms?ie=UTF8&authuser=0&msa=0&output=kml&msid=205453474391337276868.0004cc5ca2c3b07aad1ff',{preserveViewport: true});
+		ctaLayer.setMap(map);
+map.mapTypes.set(layer, new google.maps.StamenMapType(layer));
+      }
+
+
+    </script>
+
 </head>
-<body>
+<body onload="initialize()">
 
 	<header class="header" id="header">
 		<div>
@@ -125,12 +156,16 @@
 
 		<section id="the-neighbourhood">
 			<section id="map">
-				<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.au/maps/ms?msid=205453474391337276868.0004cc5ca2c3b07aad1ff&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;ll=-33.880446,151.200478&amp;spn=0.004275,0.006866&amp;z=17&amp;output=embed"></iframe>
+				<!--<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.au/maps/ms?msid=205453474391337276868.0004cc5ca2c3b07aad1ff&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;ll=-33.880446,151.200478&amp;spn=0.004275,0.006866&amp;z=17&amp;output=embed"></iframe>-->
+
+				<div id="map_canvas"></div>
+
+
 			</section>
 			<section id="hood-talk">
 				<h2><span>Ultimo, Sydney</span> is our &lsquo;hood</h2>
 				<p class="first">We&rsquo;re excited to be a part of the community in Ultimo, just outside the Sydney CBD.</p>
-				<p>The area has plenty of cafes (<a href="https://foursquare.com/v/mio-mia-cafe/4ed4234d490168f8d42a687f">Mio Mia</a> in our building, <a href="http://www.ledepot.com.au/">Le Depot</a> just up the road, and a stack more including the coffee-nerd haven <a href="http://meccaespresso.com/">Mecca Espresso</a>) and plenty of options for lunch (we&rsquo;re often at <a href="http://www.urbanspoon.com/r/70/1445468/restaurant/Sydney/Sydney-Kopitiam-Cafe-Ultimo">Kopitiam</a> for malaysian street food). Haymarket&rsquo;s a few minutes walk if you&rsquo;d like Sydney&rsquo;s best noodles, featuring incongrous grapevines</p>
+				<p>The area has plenty of cafes (<a href="https://foursquare.com/v/mio-mia-cafe/4ed4234d490168f8d42a687f">Mio Mia</a> in our building, <a href="http://www.ledepot.com.au/">Le Depot</a> just up the road, and a stack more including the coffee-nerd haven <a href="http://meccaespresso.com/">Mecca Espresso</a>) and plenty of options for lunch (we&rsquo;re often at <a href="http://www.urbanspoon.com/r/70/1445468/restaurant/Sydney/Sydney-Kopitiam-Cafe-Ultimo">Kopitiam</a> for malaysian or the Glasgow Arms for Tuesday&rsquo;s $10 burgers). Haymarket&rsquo;s a few minutes walk if you&rsquo;d like Sydney&rsquo;s best noodles, featuring incongrous grapevines</p>
 				<p>There&rsquo;s a park right behind our block that&rsquo;s perfect for soaking up sunshine or kicking a ball around at lunch, and the <a href="http://www.itac.org.au/">Ian Thorpe Acquatic Centre</a> is five minutes away if swimming laps or hitting the sauna is more your style.</p>
 				<p><a href="http://goo.gl/maps/Kd2p8">Our favourites, mapped</a>.</p>
 			</section>
@@ -182,7 +217,7 @@
 </section>
 			<section class="colophon">
 				<h3>Colophon</h3>
-				<p>Much love to <a href="http://www.flickr.com/photos/charliebrewer/sets/72157630555722954/detail/">Charlie Brewer</a> and <a href="http://blog.suranyami.com">David Parry</a> for the gorgeous photos of our space, and <a href="http://maps.stamen.com">Stamen Design</a> for the beautiful map tiles. Our logo is set in <a href="http://klim.co.nz/retail-fonts/karbon-slab-stencil/">Karbon Slab Stencil</a> by <a href="http://klim.co.nz">Kris Sowersby</a>, and this website features <a href="https://typekit.com/fonts/chaparral-pro">Chaparral Pro</a> and <a href="https://typekit.com/fonts/din-condensed-web">Din Condensed Web</a> from <a href="https://typekit.com/">Typekit</a>.</p>
+				<p>Much love to <a href="http://www.flickr.com/photos/charliebrewer/sets/72157630555722954/detail/">Charlie Brewer</a> and <a href="http://blog.suranyami.com">David Parry</a> for the gorgeous photos of our space. Our logo is set in <a href="http://klim.co.nz/retail-fonts/karbon-slab-stencil/">Karbon Slab Stencil</a> by <a href="http://klim.co.nz">Kris Sowersby</a>, and this website features <a href="https://typekit.com/fonts/chaparral-pro">Chaparral Pro</a> and <a href="https://typekit.com/fonts/din-condensed-web">Din Condensed Web</a> from <a href="https://typekit.com/">Typekit</a>. Icons (mostly) by <a href="http://www.glyphish.com/">Glyphish</a>. Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.</p>
 			</section>
 
 		</section>
@@ -271,6 +306,9 @@
 		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
+
+
+
 
 	</script>
 
