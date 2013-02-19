@@ -182,6 +182,7 @@ header.header p { font-size: 35px; line-height: 1.1em; padding: 0 7%; text-align
 #the-space h2 { color: #C91604; }
 #the-space a, #the-neighbourhood a { color: #c91604; }
 
+#how-it-works { background: #fff url(../images/nametag-mobile.gif) scroll no-repeat 50% 0; background-size: 100% auto; padding-top: 29%;}
 
 #how-it-works h2 { color: #ffac0e; }
 #how-it-works a { color: #c91604; }
