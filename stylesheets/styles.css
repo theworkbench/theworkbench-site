@@ -86,7 +86,7 @@ nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 
 #the-space { background: #c91604 url(../images/standing.jpg) fixed repeat 50% 5%; background-size: cover; padding: 0 0 180px 0; overflow-x: hidden; }
 #the-space header {background: rgba(191,21,4,0.7) url(../images/iconfade.png) fixed top center; color: #fff; margin-bottom: 140px;}
-#the-space h2 {font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 127px; line-height: 74px; padding: 32px 0 0 15px; text-transform: uppercase; letter-spacing: -0.07em; }
+#the-space h2 {font-family: "din-condensed-web", "Arial Narrow", "Times New Roman", sans-serif; font-weight: 200; font-size: 127px; line-height: 74px; padding: 32px 0 0 15px; text-transform: uppercase; letter-spacing: -0.07em; }
 #the-space h2 span { font-size: 38px; letter-spacing: normal; margin-right: -10px; position: relative; top: -62px; border-bottom: 5px solid #fff; }
 #the-space header p {background: rgb(191,21,4); color: #fff; font-size: 0.8em; overflow: auto; padding: 0.5em 1em; margin: 0;}
 #the-space header span.date {margin-left: 1em;}
@@ -102,7 +102,7 @@ nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 	#the-neighbourhood #map div { height: 600px; width: 550px;}
 	#the-neighbourhood #map div div {width: auto; height: auto;}
 #the-neighbourhood h2 {  font-weight: 200; font-size: 81px; line-height: 74px; color: #212121; display: block; margin-bottom: 19px; letter-spacing: -0.03em; width: 100% !important;  }
-#the-neighbourhood h2 span { font-family: "din-condensed-web", "Arial Narrow", sans-serif; text-transform: uppercase; letter-spacing: -0.07em; color: #ffac0e; display: block; }
+#the-neighbourhood h2 span { font-family: "din-condensed-web", "Arial Narrow", "Times New Roman", sans-serif; text-transform: uppercase; letter-spacing: -0.07em; color: #ffac0e; display: block; }
 #the-neighbourhood a { color: #000;}
 #the-neighbourhood a:hover { color: #ffac0e; }
 
@@ -125,7 +125,7 @@ nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 
 
 #contact { background: url(../images/black85trans.png), url(../images/mapimage-1.png); background-attachment: fixed; background-position: 50% 50%;}
-#contact h2 {font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 87px; line-height: 74px; padding: 32px 0 0 0; text-transform: uppercase; letter-spacing: -0.07em; }
+#contact h2 {font-family: "din-condensed-web", "Arial Narrow", "Times New Roman", sans-serif; font-weight: 200; font-size: 87px; line-height: 74px; padding: 32px 0 0 0; text-transform: uppercase; letter-spacing: -0.07em; }
 #contact .streetaddress { display: block; font-size: 32px; margin: 8px 0;}
 #contact .streetaddress a { font-style: normal; }
 #contact .open-hours { margin-bottom: 2.4em;}
