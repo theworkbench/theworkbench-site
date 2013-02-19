@@ -1,3 +1,5 @@
 $(document).ready(function(){
-   $('#nav').localScroll({duration:900});
+	if ($.browser.msie != true) {
+		$('#nav').localScroll({duration:900});
+	}
 });
