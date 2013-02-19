@@ -6,9 +6,7 @@ body { margin: 0; padding: 0; background: #fff; color: #000; }
 
 section, section p, section li { font: 21px/1.25em "chaparral-pro", georgia, serif; }
 
-
 .clear {clear: both;}
-
 
 header.header { background: #000; color: #fff; border-bottom: 3px solid #fff; }
 header.header h1 {margin: 0 0 0 -2px; padding: 0; background: url(../images/logo.svg) scroll no-repeat 0 0; width: 618px; height: 88px; text-indent: -1000em; overflow: hidden;}
@@ -16,13 +14,11 @@ header.header p {width: auto; text-align: left; font-family: "chaparral-pro", ge
 header.header p:before { content: "because ";}
 
 
-
 #intro { padding: 10% 40% 20% 7%;  }
 #intro p { text-align: left; }
 #intro a { color: #fff;  }
 #intro a:hover { color: #fca60e; text-decoration: none;}
 #intro img { height: 300px; width: 300px; margin: 0 7%; float: right; border-radius: 150px;}
-
 
 
 #how-it-works ul, #how-it-works ol, #how-it-works li { margin: 0; padding: 0; list-style: none; }
@@ -72,21 +68,6 @@ form input.text {background-color: #000; border-radius: 2px; border: none; font:
 form button { text-transform: uppercase; font-weight: 400; font: 19px/22px "din-condensed-web", sans-serif; color: #222; background: #fff; border: none; padding: 5px 10px; margin: 4px 0;  }
 form button:hover { background: #ffac0e;}
 form button:active { background: #ffac0e;}
-
-.interest-form { background: #030303 url(../images/iconfade.png) fixed bottom center; border: 5px solid #FFAC0E; border-radius: 15px; color: #fff; float: left; padding: 80px 40px;}
-	.interest-form form {margin: 0; padding: 0;}
-	.interest-form h2 {color: #ffac0e; font-family: "din-condensed-web", "Arial Narrow", sans-serif; font-weight: 200; font-size: 69px; line-height: 0.8; margin: 0; text-transform: uppercase; letter-spacing: -0.06em;  }
-	.interest-form label {clear: both; display: block; margin: 0 0 20px 0;}
-	.interest-form span {display: block; float: left; width: 50px;}
-	.interest-form .checkbox span {float: left; margin-left: 5px; width: auto;}
-	.interest-form .checkbox input {float: left; margin-left: 54px;}
-	.interest-form form input.text {background-color: #fff; border-radius: 2px; border: none; float: left; font: 19px/1.3em "chaparral-pro", georgia, serif; color: #000; margin: 0 0 10px 5px; padding: 2px 5px; }
-	.interest-form form button {clear: both; margin: 15px 0 0 54px;}
-
-/* colorbox */
-#colorbox {width: 50%;}
-#cboxClose {background: #030303; color: #fff; cursor: pointer; position: absolute; right: 1em; top: 1em;}
-#cboxOverlay {background: #030303; cursor: pointer; height: 100%; left: 0; position: fixed; top: 0; width: 100%;}
 
 /* Desktop version */
 
@@ -167,6 +148,9 @@ nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 }
 
 
+/* Telling IE10 to use the mobile version in snap view */
+@-ms-viewport { width: device-width; }
+
 /* Mobile version */
 
 @media screen and (max-width: 640px) {
@@ -181,7 +165,6 @@ section p, section li { font-size: 19px; line-height: 1.25em; }
 header.header { padding: 50px 0 20px 0; background: #000 url(../images/foursquare-mobile2.jpg) scroll no-repeat 50% 0; background-size: 100% auto; color: #000; padding-top: 115px;}
 header.header h1 {width: 92%; height: 62px; margin:0 0 0 7%;  background-position: 0 50%; background-size: 86% auto; }
 header.header p { font-size: 35px; line-height: 1.1em; padding: 0 7%; text-align: left; margin: -10px 0 0 0;}
-
 
 
 #intro, #the-space, #how-it-works,#the-neighbourhood, .colophon { padding: 5% 7% 15% 7%; }
@@ -199,14 +182,12 @@ header.header p { font-size: 35px; line-height: 1.1em; padding: 0 7%; text-align
 #the-space a, #the-neighbourhood a { color: #c91604; }
 
 
-
 #how-it-works h2 { color: #ffac0e; }
 #how-it-works a { color: #c91604; }
 #how-it-works ul li { display: block; width: 100%; margin: 0.7em 0 2em 0; }
 #how-it-works ul li li { margin: 0;}
 #how-it-works ol li { padding: 1px 0;}
 #how-it-works ul li.membership-price { line-height: 25px; }
-
 
 
 #the-neighbourhood #map, #the-neighbourhood #map-canvas { display: none; }
@@ -267,9 +248,6 @@ header.header p { font-size: 86px; line-height: 72px; width: 100%; max-width: 10
 #the-space header p span.header { display: none;}
 #the-space header .musicsources {margin-right: -1.5em;}
 
-
-.interest-form button {float: left; margin: 15px 0 0 0;}
-
 #contact #bios { padding-top: 15px;}
 #contact #bios img { width: 80px; height: 80px; border-radius: 50%; float: left; margin: 0 0.6em 1em 0; }
 #contact #bios h3 { font-size: 24px; padding: 0.5em 0 0; line-height: 24px;}
@@ -306,6 +284,18 @@ header.header p { font-size: 87px; line-height: 82px; padding-right: 15%; }
 #contact #bios .email { font-size: 28px; margin-left: 0; clear: left; }
 
 
-.interest-form button {float: left; margin: 15px 0 0 0;}
-
 /* end media query */}
+
+/* Hacking for IE 10 - the Surface tanks with fixed background images */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   header.header,
+   #intro,
+   #the-space,
+   #the-space header,
+   #the-space section p,
+   #the-neighbourhood,
+   #contact {background-attachment: scroll};
+
+}
+
+
