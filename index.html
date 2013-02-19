@@ -11,8 +11,39 @@
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<link href="stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0rx845px56mjjt30jizS7nlJNWK0FnSE&amp;sensor=false"></script>
+    <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.1"></script>
+    <script type="text/javascript">
+      function initialize() {
+        var layer = "toner";
+        var mapOptions = {
+          center: new google.maps.LatLng(-33.880446,151.200478),
+          zoom: 17,
+          panControl: false,
+		  mapTypeControl: false,
+		  zoomControl: true,
+		  zoomControlOptions: {
+		    style: google.maps.ZoomControlStyle.SMALL
+		  },
+          mapTypeId: layer,
+		  mapTypeControlOptions: {
+	 	  }
+        };
+
+
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            mapOptions);
+      var ctaLayer = new google.maps.KmlLayer('https://maps.google.com.au/maps/ms?ie=UTF8&authuser=0&msa=0&output=kml&msid=205453474391337276868.0004cc5ca2c3b07aad1ff',{preserveViewport: true});
+		ctaLayer.setMap(map);
+map.mapTypes.set(layer, new google.maps.StamenMapType(layer));
+      }
+
+
+    </script>
+
 </head>
-<body>
+<body onload="initialize()">
 
 	<header class="header" id="header">
 		<div>
@@ -70,7 +101,6 @@
 			<div>
 				<p>Anyone is welcome to drop by with a <strong>day pass</strong> and use the space for the day and meet the great bunch of people who call <em>The&nbsp;Workbench</em>&nbsp;home (and once you&rsquo;ve tried out the space for a day, we can also roll the cost of that day towards your first month of&nbsp;membership!)</p>
 
-
 				<ul id="membership-table">
 					<li class="membership-day-pass">
 						<h3>Day pass</h3>
@@ -118,58 +148,34 @@
 
 	<section id="the-neighbourhood">
 		<section id="map">
-			<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.au/maps/ms?msid=205453474391337276868.0004cc5ca2c3b07aad1ff&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;ll=-33.880446,151.200478&amp;spn=0.004275,0.006866&amp;z=17&amp;output=embed"></iframe>
+			<div id="map_canvas"></div>
 		</section>
 		<section id="hood-talk">
 			<h2><span>Ultimo, Sydney</span> is our &lsquo;hood</h2>
 			<p class="first">We&rsquo;re excited to be a part of the community in Ultimo, just outside the Sydney CBD.</p>
-			<p>The area has plenty of cafes (<a href="https://foursquare.com/v/mio-mia-cafe/4ed4234d490168f8d42a687f">Mio Mia</a> in our building, <a href="http://www.ledepot.com.au/">Le Depot</a> just up the road, and a stack more including the coffee-nerd haven <a href="http://meccaespresso.com/">Mecca Espresso</a>) and plenty of options for lunch (we&rsquo;re often at <a href="http://www.urbanspoon.com/r/70/1445468/restaurant/Sydney/Sydney-Kopitiam-Cafe-Ultimo">Kopitiam</a> for malaysian street food). Haymarket&rsquo;s a few minutes walk if you&rsquo;d like Sydney&rsquo;s best noodles, featuring incongrous grapevines</p>
+			<p>The area has plenty of cafes (<a href="https://foursquare.com/v/mio-mia-cafe/4ed4234d490168f8d42a687f">Mio Mia</a> in our building, <a href="http://www.ledepot.com.au/">Le Depot</a> just up the road, and a stack more including the coffee-nerd haven <a href="http://meccaespresso.com/">Mecca Espresso</a>) and plenty of options for lunch (we&rsquo;re often at <a href="http://www.urbanspoon.com/r/70/1445468/restaurant/Sydney/Sydney-Kopitiam-Cafe-Ultimo">Kopitiam</a> for malaysian or the Glasgow Arms for Tuesday&rsquo;s $10 burgers). Haymarket&rsquo;s a few minutes walk if you&rsquo;d like Sydney&rsquo;s best noodles, featuring incongrous grapevines</p>
 			<p>There&rsquo;s a park right behind our block that&rsquo;s perfect for soaking up sunshine or kicking a ball around at lunch, and the <a href="http://www.itac.org.au/">Ian Thorpe Acquatic Centre</a> is five minutes away if swimming laps or hitting the sauna is more your style.</p>
 			<p><a href="http://goo.gl/maps/Kd2p8">Our favourites, mapped</a>.</p>
 		</section>
 	</section>
 
-	<section id="contact">
-			<h2>Get in touch</h2>
-		<section id="vitals">
-			<p class="streetaddress"><a href="http://www.bing.com/maps/?v=2&amp;cp=-33.88071108743168~151.19993600000004&amp;lvl=16&amp;dir=0&amp;sty=r&amp;where1=645%20Harris%20St%2C%20Ultimo%2C%20NSW%202007&amp;form=LMLTCC">Level 2, 645 Harris Street<br />Ultimo, NSW</a></p>
-			<p class="open-hours">9am&ndash;5pm, Monday&ndash;Friday</p>
-			<p><a href="mailto:hello@theworkben.ch">hello@theworkben.ch</a><br />
-				<a href="http://www.twitter.com/workatworkbench">@workatworkbench</a> on twitter<br />
-				 <a href="https://foursquare.com/workatworkbench">foursquare</a><br />
-				<a href="http://blog.theworkben.ch">blog</a></p>
-
-			<section id="emailform">
-				<h3>Mailing List</h3>
-				<p>We&rsquo;ll send you updates, not&nbsp;spam.</p>
-				<form action="http://theworkbench.createsend.com/t/j/s/vhhth/" method="post">
-					<div>
-						<label for="name">Name:</label> <input class="text" type="text" name="cm-name" id="name" placeholder="Your name" size="23" /><br />
-						<label for="vhhth-vhhth">Email:</label> <input class="text" type="text" name="cm-vhhth-vhhth" id="vhhth-vhhth" size="23" placeholder="Email address" /><br />
-						<button type="submit">Sign up</button>
-					</div>
-				</form>
-			</section>
+	<section id="bios">
+		<section>
+			<a href="http://twitter.com/lachlanhardy/"><img src="images/avatar-lachlan.jpg" alt="Lachlan Hardy" /></a>
+			<h3>Lachlan Hardy</h3>
+			<p><a href="http://twitter.com/lachlanhardy/">@lachlanhardy</a></p>
 		</section>
-
-		<section id="bios">
-			<section>
-				<a href="http://twitter.com/lachlanhardy/"><img src="images/avatar-lachlan.jpg" alt="Lachlan Hardy" /></a>
-				<h3>Lachlan Hardy</h3>
-				<p><a href="http://twitter.com/lachlanhardy/">@lachlanhardy</a></p>
-			</section>
-			<section>
-				<a href="http://twitter.com/scottinsyd/"><img src="images/avatar-scott.jpg" alt="Scott Crawford" /></a>
-				<h3>Scott Crawford</h3>
-				<p><a href="http://twitter.com/scottinsyd/">@scottinsyd</a></p>
-			</section>
-			<section>
-				<a href="http://twitter.com/diversionary/"><img src="images/avatar-simon.jpg" alt="Simon Wright" /></a>
-				<h3>Simon Wright</h3>
-				<p><a href="http://twitter.com/diversionary/">@diversionary</a></p>
-			</section>
-			<p class="email"><a href="mailto:hello@theworkben.ch">hello@theworkben.ch</a></p>
+		<section>
+			<a href="http://twitter.com/scottinsyd/"><img src="images/avatar-scott.jpg" alt="Scott Crawford" /></a>
+			<h3>Scott Crawford</h3>
+			<p><a href="http://twitter.com/scottinsyd/">@scottinsyd</a></p>
 		</section>
+		<section>
+			<a href="http://twitter.com/diversionary/"><img src="images/avatar-simon.jpg" alt="Simon Wright" /></a>
+			<h3>Simon Wright</h3>
+			<p><a href="http://twitter.com/diversionary/">@diversionary</a></p>
+		</section>
+		<p class="email"><a href="mailto:hello@theworkben.ch">hello@theworkben.ch</a></p>
 	</section>
 
 	<section class="colophon">
