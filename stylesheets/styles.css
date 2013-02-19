@@ -126,7 +126,8 @@ nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 #the-neighbourhood {background: #fff url(../images/mapimage-1.png) fixed repeat 50% 50%; overflow: auto; padding: 6% 0 11% 0;}
 	#the-neighbourhood #map {float: left; height: 600px; margin: 3.4% 2% 0 2%; position: relative; width: 40%;}
 	#the-neighbourhood #hood-talk {background: rgba(255,255,255,0.8); color: #111; float: right; margin-right: 0; padding: 3% 6% 3% 2%; width: 32%;}
-	#the-neighbourhood #map #map-canvas { height: 600px; width: 550px;}
+	#the-neighbourhood #map div { height: 600px; width: 550px;}
+	#the-neighbourhood #map div div {width: auto; height: auto;}
 #the-neighbourhood h2 {  font-weight: 200; font-size: 81px; line-height: 74px; color: #212121; display: block; margin-bottom: 19px; letter-spacing: -0.03em; width: 100% !important;  }
 #the-neighbourhood h2 span { font-family: "din-condensed-web", "Arial Narrow", sans-serif; text-transform: uppercase; letter-spacing: -0.07em; color: #ffac0e; display: block; }
 #the-neighbourhood a { color: #000;}
@@ -249,8 +250,9 @@ header.header p { font-size: 86px; line-height: 72px; width: 100%; max-width: 10
 #intro img { width: 250px; margin: -2em 0 0 1%; border-radius: 150px;}
 
 #the-neighbourhood {  padding-bottom: 3%; background-position: 35% 0; background-repeat: no-repeat; background-color: #fff; background-attachment: scroll;}
-#the-neighbourhood #map {float: none; height: 200px; margin: 3.4% auto 0 auto; position: relative; width: 80%;}
-#the-neighbourhood #map #map-canvas { height: 200px !important; width: 100%; }
+#the-neighbourhood #map {float: none; height: 300px; margin: 3.4% auto 0 auto; position: relative; width: 80%;}
+#the-neighbourhood #map div { height: 300px; width: 100%; }
+#the-neighbourhood #map div div {height: auto; width: auto;}
 #the-neighbourhood #hood-talk {background: rgba(255,255,255,0.8); color: #111; float: none; padding: 3% 2%; margin: 0 auto; width: 80%;}
 
 
