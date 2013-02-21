@@ -56,8 +56,8 @@ header.header p:before { content: "because ";}
 
 form label { display: inline; }
 form input.text {background-color: #000; border-radius: 2px; border: none; font: 19px/1.3em "chaparral-pro", georgia, serif; color: #fff; margin: 0 0 10px 5px; padding: 2px 5px;  }
-::-webkit-input-placeholder { color: rgba(255,255,255,0.65); font-style: italic;}
-:-moz-placeholder { color: rgba(255,255,255,0.65); font-style: italic;}
+::-webkit-input-placeholder { color: rgba(255,255,255,0.65); }
+:-moz-placeholder { color: rgba(255,255,255,0.65);}
 form button { text-transform: uppercase; font-weight: 400; font: 19px/22px "din-condensed-web", "Arial Narrow", "Segoe WP", sans-serif; color: #222; background: #fff; border: none; padding: 5px 10px; margin: 4px 0;  }
 form button:hover { background: #ffac0e;}
 form button:active { background: #ffac0e;}
