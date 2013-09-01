@@ -6,8 +6,10 @@ function initializeMaps() {
 			panControl: false,
 			mapTypeControl: false,
 			zoomControl: true,
+			scrollwheel: false,
 			zoomControlOptions: {
 			style: google.maps.ZoomControlStyle.SMALL
+
 		},
 		mapTypeId: layer,
 		mapTypeControlOptions: {}
