@@ -277,6 +277,7 @@ header.header p { font-size: 86px; line-height: 72px; width: 100%; max-width: 10
 /* landscape iPad */
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape) {
 
+* {background: gold !important;}
 
 header.header { background-size: 106% auto; background-repeat: no-repeat; background-color: #232323; background-attachment: scroll; padding: 275px 8% 10px 8%; }
 header.header p { font-size: 87px; line-height: 82px; padding-right: 15%; }
