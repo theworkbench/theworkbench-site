@@ -227,7 +227,7 @@ form input#name, form input#vhhth-vhhth { margin: 0 0 10px 0; border: 1px solid 
 /* end media query */}
 
 
-/* portrait iPad */
+/* portrait tablet */
 @media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait){
 
 
@@ -274,10 +274,8 @@ header.header p { font-size: 86px; line-height: 72px; width: 100%; max-width: 10
 
 /* end media query */}
 
-/* landscape iPad */
+/* landscape tablet */
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape) {
-
-* {background: gold !important;}
 
 header.header { background-size: 106% auto; background-repeat: no-repeat; background-color: #232323; background-attachment: scroll; padding: 275px 8% 10px 8%; }
 header.header p { font-size: 87px; line-height: 82px; padding-right: 15%; }
@@ -286,8 +284,6 @@ header.header p { font-size: 87px; line-height: 82px; padding-right: 15%; }
 
 #the-space { background-position: 0 170px; background-position: 0 0; background-size: 100% auto; background-repeat: no-repeat; background-color: #000; background-attachment: scroll; padding-bottom: 0;}
 #the-space section p { width: 75%; }
-
-
 
 #how-it-works { background: #fff;}
 #how-it-works { padding: 10% 10% 10% 10%; }
