@@ -138,7 +138,7 @@ nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 #contact .email { border-top: 1px solid #555; font-family: "chaparral-pro", georgia, serif; font-weight: 200; font-size: 52px; margin: 0.5em 0; padding: 1em 0 0 0; text-align: center; }
 #contact .email a { font-style: normal;}
 
-#contact #bios { width: 52%; display: inline-block; margin-left: -3px;}
+#contact #bios { width: 52%; display: inline-block; margin-left: 3%;}
 #bios > .single-line .bio { width: 100%; }
 #bios > .single-line img { float: left; margin-right: 1rem; width: 140px; height: 140px; }
 .multiple-bios > .bio { display: inline-block; vertical-align: top; width: 14%; margin: 0 5%; text-align: center;}
