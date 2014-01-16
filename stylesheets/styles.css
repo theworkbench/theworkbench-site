@@ -48,7 +48,7 @@ header.header p:before { content: "because ";}
 #contact { background: #141c1f; color: #fff; padding: 80px 40px;  }
 #contact h2, #contact a { color: #fff;}
 
-#bios > section {  padding-bottom: 2rem; border-bottom: 1px solid #555; margin-bottom: 1rem; }
+#bios > section {  padding-bottom: 2rem; margin-bottom: 1rem; }
 #bios h4 { font-size: 28px; font-weight: 200; text-transform: uppercase; line-height: 1; margin: 1rem auto; font-family: "din-condensed-web", "Arial Narrow", "Segoe WP", sans-serif; }
 
 .colophon { padding: 25px 40px 15px 40px; color: #777; background-color: #000; }
@@ -135,7 +135,10 @@ nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 
 #contact #vitals { width: 45%; display: inline-block; vertical-align: top;}
 
-#contact #bios { width: 52%; display: inline-block; margin-top: -88px;}
+#contact .email { border-top: 1px solid #555; font-family: "chaparral-pro", georgia, serif; font-weight: 200; font-size: 52px; margin: 0.5em 0; padding: 1em 0 0 0; text-align: center; }
+#contact .email a { font-style: normal;}
+
+#contact #bios { width: 52%; display: inline-block; margin-left: -3px;}
 #bios > .single-line .bio { width: 100%; }
 #bios > .single-line img { float: left; margin-right: 1rem; width: 140px; height: 140px; }
 .multiple-bios > .bio { display: inline-block; vertical-align: top; width: 14%; margin: 0 5%; text-align: center;}
@@ -144,8 +147,7 @@ nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 #bios a:hover img { opacity: 0.6; -webkit-transition: 0.1s all ease-out; }
 #bios p { font-size: 0.8em; line-height: 1.3em; margin-top: 0.5rem;}
 #bios h3 { font-weight: 200;  }
-#bios .email { font-family: "chaparral-pro", georgia, serif; font-weight: 200; font-size: 52px; margin: 0.5em 0; text-align: center; }
-#bios .email a { font-style: normal;}
+
 
 
 #emailform { margin-top: 2.4em;}
