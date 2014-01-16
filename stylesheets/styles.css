@@ -133,7 +133,7 @@ nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 #contact .streetaddress a { font-style: normal; }
 #contact .open-hours { margin-bottom: 2.4em;}
 
-#contact #vitals { width: 45%; display: inline-block; vertical-align: top;}
+#contact #vitals { width: 43%; display: inline-block; vertical-align: top;}
 
 #contact .email { border-top: 1px solid #555; font-family: "chaparral-pro", georgia, serif; font-weight: 200; font-size: 52px; margin: 0.5em 0; padding: 1em 0 0 0; text-align: center; }
 #contact .email a { font-style: normal;}
