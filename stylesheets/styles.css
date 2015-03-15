@@ -48,8 +48,13 @@ header.header p:before { content: "because ";}
 #contact { background: #141c1f; color: #fff; padding: 80px 40px;  }
 #contact h2, #contact a { color: #fff;}
 
+<<<<<<< HEAD
 #bios > section {  padding-bottom: 2rem; border-bottom: 1px solid #555; margin-bottom: 1rem; }
 #bios h4 { font-size: 28px; font-weight: 200; text-transform: none; line-height: 1; margin: 1rem auto; font-family: "din-condensed-web", "Arial Narrow", "Segoe WP", sans-serif; }
+=======
+#bios > section {  padding-bottom: 2rem; margin-bottom: 1rem; }
+#bios h4 { font-size: 28px; font-weight: 200; text-transform: uppercase; line-height: 1; margin: 1rem auto; font-family: "din-condensed-web", "Arial Narrow", "Segoe WP", sans-serif; }
+>>>>>>> 8693e140140c6f556dd760690f6704a6514589c0
 
 .colophon { padding: 25px 40px 15px 40px; color: #777; background-color: #000; }
 .colophon h3 { margin: 0; font-size: 0.7em;}
@@ -128,14 +133,22 @@ nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 
 
 #contact { background: url(../images/black85trans.png), url(../images/mapimage-1.png); background-attachment: fixed; background-position: 50% 50%;}
+<<<<<<< HEAD
 #contact h2 {font-family: "din-condensed-web", "Arial Narrow", "Segoe WP", sans-serif; font-weight: 200; font-size: 87px; line-height: 74px; padding: 32px 0 0 0; text-transform: none; letter-spacing: -0.07em; }
 #contact .streetaddress { display: block; font-size: 32px; margin: 8px 0;}
+=======
+#contact h2 {font-family: "din-condensed-web", "Arial Narrow", "Segoe WP", sans-serif; font-weight: 200; font-size: 87px; line-height: 74px; padding: 32px 0 0 0; text-transform: uppercase; letter-spacing: -0.07em; }
+#contact .streetaddress { display: block; font-size: 32px; margin: 1rem 0;}
+>>>>>>> 8693e140140c6f556dd760690f6704a6514589c0
 #contact .streetaddress a { font-style: normal; }
 #contact .open-hours { margin-bottom: 2.4em;}
 
-#contact #vitals { width: 45%; display: inline-block; vertical-align: top;}
+#contact #vitals { width: 43%; display: inline-block; vertical-align: top;}
 
-#contact #bios { width: 52%; display: inline-block; margin-top: -88px;}
+#contact .email { border-top: 1px solid #555; font-family: "chaparral-pro", georgia, serif; font-weight: 200; font-size: 52px; margin: 0.5em 0; padding: 1em 0 0 0; text-align: center; }
+#contact .email a { font-style: normal;}
+
+#contact #bios { width: 52%; display: inline-block; margin-left: 2%;}
 #bios > .single-line .bio { width: 100%; }
 #bios > .single-line img { float: left; margin-right: 1rem; width: 140px; height: 140px; }
 .multiple-bios > .bio { display: inline-block; vertical-align: top; width: 14%; margin: 0 5%; text-align: center;}
@@ -144,8 +157,7 @@ nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 #bios a:hover img { opacity: 0.6; -webkit-transition: 0.1s all ease-out; }
 #bios p { font-size: 0.8em; line-height: 1.3em; margin-top: 0.5rem;}
 #bios h3 { font-weight: 200;  }
-#bios .email { font-family: "chaparral-pro", georgia, serif; font-weight: 200; font-size: 52px; margin: 0.5em 0; text-align: center; }
-#bios .email a { font-style: normal;}
+
 
 
 #emailform { margin-top: 2.4em;}
