@@ -1,5 +1,5 @@
 function initializeMaps() {
-	var layer = "toner";
+	var layer = "terrain";
 	var mapOptions = {
 			center: new google.maps.LatLng(-33.880446,151.200478),
 			zoom: 17,
