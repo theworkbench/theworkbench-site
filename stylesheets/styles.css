@@ -178,7 +178,7 @@ nav li a:hover { background: #C91604;  -webkit-transition: all 0.1s ease-out;}
 
 body { overflow-x: hidden;}
 
-section p, section li { font-size: 19px; line-height: 1.25em; }
+section p, section li { font-size: 19px; line-height: 1.4em; }
 
 
 header.header { padding: 50px 0 20px 0; background: #000 url(../images/foursquare-mobile2.jpg) scroll no-repeat 50% 0; background-size: 100% auto; color: #000; padding-top: 115px;}
@@ -193,7 +193,7 @@ header.header p { font-size: 35px; line-height: 1.1em; padding: 0 7%; text-align
 #intro { padding-bottom: 5%; }
 #intro a { color: #000; }
 #intro img  { width: 115px; height: auto; float: right;  overflow: hidden; margin: 0.5em -18px 0.5em 2px; }
-#intro p.first { font-size: 28px; line-height: 1.1em; padding: 0; text-align: left;}
+#intro p.first { font-size: 28px; line-height: 1.4em; padding: 0; text-align: left;}
 #intro p.first strong { font-weight: 200; }
 
 #the-space { background: #fff url(../images/standing-mobile.jpg) scroll no-repeat 50% 0; background-size: 100% auto; color: #000; padding-top: 48%; }
